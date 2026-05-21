@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, HostListener, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitcherComponent } from './language-switcher.component';
 import { ThemeToggleComponent } from './theme-toggle.component';
@@ -7,7 +7,7 @@ import { ThemeToggleComponent } from './theme-toggle.component';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink, TranslateModule, LanguageSwitcherComponent, ThemeToggleComponent],
+  imports: [RouterLink, RouterLinkActive, TranslateModule, LanguageSwitcherComponent, ThemeToggleComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './navbar.component.html',
 })
@@ -16,11 +16,9 @@ export class NavbarComponent {
   readonly isMobileMenuOpen = signal(false);
 
   readonly navItems = [
-    { key: 'about', fragment: 'about' },
-    { key: 'experience', fragment: 'experience' },
-    { key: 'skills', fragment: 'skills' },
-    { key: 'projects', fragment: 'projects' },
-    { key: 'education', fragment: 'education' },
+    { key: 'home', route: '/' },
+    { key: 'about', route: '/about' },
+    { key: 'portfolio', route: '/portfolio' },
   ];
 
   @HostListener('window:scroll')

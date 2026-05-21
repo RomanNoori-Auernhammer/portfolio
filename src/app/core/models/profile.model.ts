@@ -43,6 +43,6 @@ export interface Certification {
 
 export interface Language {
   nameKey: string;
-  levelKey: string;
+  levelKey?: string;
   proficiency: number;
 }

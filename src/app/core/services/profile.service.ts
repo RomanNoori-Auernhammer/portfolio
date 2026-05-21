@@ -45,13 +45,6 @@ export class ProfileService {
       endDate: '2024-02',
       descriptionKey: 'education.ihk.description',
     },
-    {
-      id: 'school',
-      institution: 'Wilhelm-Löhe-Schule, Nürnberg',
-      degreeKey: 'education.school.degree',
-      startDate: '2014-09',
-      endDate: '2020-07',
-    },
   ];
 
   readonly skillCategories: SkillCategory[] = [
@@ -65,11 +58,15 @@ export class ProfileService {
     },
     {
       id: 'devops', nameKey: 'skills.devops', icon: 'devops',
-      skills: ['Git', 'GitLab', 'GitHub', 'CI/CD', 'Cloud Foundry', 'Jenkins', 'Docker', 'Linux'],
+      skills: ['Git', 'GitLab', 'GitHub', 'CI/CD', 'Cloud Foundry', 'Jenkins', 'Docker', 'Linux', 'Vercel'],
     },
     {
       id: 'tooling', nameKey: 'skills.tooling', icon: 'tooling',
-      skills: ['SonarQube', 'IntelliJ', 'VS Code', 'Postman', 'Confluence', 'Azure DevOps', 'GitHub Copilot'],
+      skills: ['SonarQube', 'IntelliJ', 'VS Code', 'Postman', 'Confluence', 'Azure DevOps'],
+    },
+    {
+      id: 'ai', nameKey: 'skills.ai', icon: 'ai',
+      skills: ['GitHub Copilot', 'Claude Code', 'ChatGPT', 'Cursor', 'Codeium'],
     },
     {
       id: 'methods', nameKey: 'skills.methods', icon: 'methods',

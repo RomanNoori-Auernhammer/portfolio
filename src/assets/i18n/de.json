@@ -1,6 +1,8 @@
 {
   "nav": {
+    "home": "Home",
     "about": "Über mich",
+    "portfolio": "Portfolio",
     "experience": "Erfahrung",
     "skills": "Skills",
     "projects": "Projekte",
@@ -8,30 +10,34 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "status": "Offen für neue Herausforderungen",
-    "greeting": "Hallo, ich bin",
-    "title": "Ich bin",
-    "role": "Software Engineer.",
-    "description": "Full-Stack Developer mit Fokus auf Angular, Java/Spring Boot und Cloud-Native Entwicklung. Ich entwickle skalierbare, barrierefreie und qualitativ hochwertige Webanwendungen mit Leidenschaft für saubere Architektur und gute Tests.",
+    "status": "Verfügbar für Festanstellung & Freelance-Projekte",
+    "greeting": "Software Engineer",
+    "title": "Professionelle Weblösungen,",
+    "role": "die wirklich überzeugen.",
+    "description": "Von individuellen Unternehmenswebsites für kleine und mittelgroße Unternehmen bis zu skalierbaren Full-Stack-Anwendungen — ich entwickle digitale Lösungen mit 5+ Jahren Erfahrung, die Ihre Kunden begeistern.",
     "cta": {
       "contact": "Kontakt aufnehmen",
       "projects": "Projekte ansehen"
     },
     "techStack": "Stack",
-    "scroll": "Scrollen"
+    "scroll": "Scrollen",
+    "typewriter": {
+      "label": "aktuell verfügbar als",
+      "skills": ["Angular", "TypeScript", "Tailwind CSS", "Java", "Spring Boot", "PostgreSQL", "Docker", "GitLab CI/CD", "Cloud Foundry", "Jest", "Cypress"]
+    }
   },
   "about": {
     "label": "Über mich",
     "heading": "Software Engineer mit",
-    "headingHighlight": "Herz und Verstand.",
-    "p1": "Ich bringe große Expertise in Frontend-Technologien mit und biete umfangreiche Erfahrungen mit Backend-Services in Java/Spring Boot.",
-    "p2": "Ich kenne mich aus im Testing — Unit-, Integrationstests und Cypress gehören zu meinem täglichen Werkzeug. Agiles Arbeiten mit Scrum, Pair- und Mob-Programming bereitet mir große Freude.",
-    "p3": "Ich stehe für einen zuvorkommenden und offenen Kommunikationsstil mit Kunden sowie im Team.",
+    "headingHighlight": "Leidenschaft für das Web.",
+    "p1": "Ich entwickle moderne, professionelle Weblösungen — von individuellen Unternehmenswebsites für kleine und mittelständische Betriebe bis hin zu skalierbaren Full-Stack-Anwendungen mit Angular und Java/Spring Boot.",
+    "p2": "Qualität steht dabei immer im Mittelpunkt: sauberer Code, durchdachte Architektur und umfangreiche Tests. Ob als Freelancer für kleine und mittelgroße Unternehmen oder als Entwickler im Team — ich liefere Ergebnisse, die überzeugen.",
+    "p3": "Mit einem offenen, zuvorkommenden Kommunikationsstil begleite ich Kunden und Teams von der ersten Idee bis zum fertigen Produkt.",
     "info": {
-      "experience": "2+ Jahre Berufserfahrung"
+      "experience": "5+ Jahre IT-Erfahrung"
     },
     "stats": {
-      "years": "Jahre Erfahrung",
+      "years": "Jahre IT-Erfahrung",
       "techs": "Technologien",
       "certs": "Weiterbildungen"
     }
@@ -60,12 +66,13 @@
     "backend": "Backend",
     "devops": "DevOps & Cloud",
     "tooling": "Tools",
+    "ai": "KI & AI-Tools",
     "methods": "Methoden"
   },
   "projects": {
     "label": "Highlights",
     "heading": "Ausgewählte Projekte",
-    "subheading": "Eine Auswahl meiner bisherigen Arbeiten.",
+    "subheading": "Einblicke in meine Arbeit — professionelle Lösungen für Unternehmen und eigene Projekte.",
     "notification": {
       "title": "Benachrichtigungsplattform",
       "description": "Modernisierung einer zentralen Plattform zur Anzeige und Verwaltung von Benachrichtigungen aus verschiedenen Fachanwendungen.",
@@ -114,8 +121,8 @@
     "german": "Deutsch",
     "english": "Englisch",
     "native": "Muttersprache",
-    "c1": "Verhandlungssicher (C1)",
-    "b2": "Fließend (B2)"
+    "c1": "Verhandlungssicher",
+    "b2": "Fließend"
   },
   "contact": {
     "label": "Kontakt",
@@ -140,7 +147,7 @@
     "success": "Dein E-Mail-Programm sollte sich nun geöffnet haben."
   },
   "footer": {
-    "tagline": "Software Engineer mit Fokus auf Angular, Java/Spring Boot und Cloud-Native Entwicklung.",
+    "tagline": "Full-Stack Developer · Individuelle Weblösungen für kleine und mittelgroße Unternehmen und Unternehmen.",
     "quickLinks": "Schnellzugriff",
     "contact": "Kontakt",
     "rights": "Alle Rechte vorbehalten.",

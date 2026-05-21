@@ -16,8 +16,8 @@ import { ProfileService } from '../../core/services/profile.service';
             <div class="flex items-center gap-2 font-display font-bold text-lg mb-3">
               <span class="flex h-9 w-9 items-center justify-center rounded-lg
                            bg-gradient-to-br from-brand-400 to-brand-600
-                           text-white font-bold text-sm" aria-hidden="true">RN</span>
-              <span>Roman<span class="text-brand-500">.</span></span>
+                           text-white font-bold text-base" aria-hidden="true">R</span>
+              <span>Roman</span>
             </div>
             <p class="text-sm text-ink-600 dark:text-ink-400 max-w-xs">
               {{ 'footer.tagline' | translate }}
@@ -29,8 +29,9 @@ import { ProfileService } from '../../core/services/profile.service';
               {{ 'footer.quickLinks' | translate }}
             </h3>
             <ul class="space-y-2 text-sm" role="list">
-              <li><a [routerLink]="['/']" fragment="about" class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">{{ 'nav.about' | translate }}</a></li>
-              <li><a [routerLink]="['/']" fragment="projects" class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">{{ 'nav.projects' | translate }}</a></li>
+              <li><a routerLink="/" class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">{{ 'nav.home' | translate }}</a></li>
+              <li><a routerLink="/about" class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">{{ 'nav.about' | translate }}</a></li>
+              <li><a routerLink="/portfolio" class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">{{ 'nav.portfolio' | translate }}</a></li>
             </ul>
           </div>
 

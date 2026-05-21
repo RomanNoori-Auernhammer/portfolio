@@ -88,7 +88,9 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
                     <div class="flex-1 min-w-0">
                       <div class="flex justify-between items-baseline mb-1">
                         <span class="font-medium text-sm text-ink-900 dark:text-ink-100">{{ lang.nameKey | translate }}</span>
-                        <span class="text-xs text-ink-500">{{ lang.levelKey | translate }}</span>
+                        @if (lang.levelKey) {
+                          <span class="text-xs text-ink-500">{{ lang.levelKey | translate }}</span>
+                        }
                       </div>
                       <div class="h-1.5 bg-ink-200 dark:bg-ink-800 rounded-full overflow-hidden">
                         <div class="h-full bg-gradient-to-r from-brand-400 to-brand-600 rounded-full transition-all duration-700"

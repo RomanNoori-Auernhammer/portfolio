@@ -7,6 +7,16 @@ export const routes: Routes = [
     title: 'Roman Noori-Auernhammer | Software Engineer',
   },
   {
+    path: 'about',
+    loadComponent: () => import('./features/about-page.component').then((m) => m.AboutPageComponent),
+    title: 'Über mich | Roman Noori-Auernhammer',
+  },
+  {
+    path: 'portfolio',
+    loadComponent: () => import('./features/portfolio-page.component').then((m) => m.PortfolioPageComponent),
+    title: 'Portfolio | Roman Noori-Auernhammer',
+  },
+  {
     path: 'imprint',
     loadComponent: () => import('./features/legal.component').then((m) => m.LegalComponent),
     data: { type: 'imprint' },

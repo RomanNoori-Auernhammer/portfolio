@@ -50,8 +50,8 @@ describe('ProfileService', () => {
   });
 
   describe('education', () => {
-    it('should contain at least 2 entries (IHK + school)', () => {
-      expect(service.education.length).toBeGreaterThanOrEqual(2);
+    it('should contain at least 1 entry', () => {
+      expect(service.education.length).toBeGreaterThanOrEqual(1);
     });
 
     it('should include the IHK-Fachinformatiker training', () => {
@@ -61,8 +61,8 @@ describe('ProfileService', () => {
   });
 
   describe('skills', () => {
-    it('should have 5 skill categories', () => {
-      expect(service.skillCategories.length).toBe(5);
+    it('should have 6 skill categories', () => {
+      expect(service.skillCategories.length).toBe(6);
     });
 
     it('should include Angular in the frontend category', () => {

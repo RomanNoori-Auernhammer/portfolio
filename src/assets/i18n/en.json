@@ -1,6 +1,8 @@
 {
   "nav": {
+    "home": "Home",
     "about": "About",
+    "portfolio": "Portfolio",
     "experience": "Experience",
     "skills": "Skills",
     "projects": "Projects",
@@ -8,30 +10,34 @@
     "contact": "Contact"
   },
   "hero": {
-    "status": "Open to new opportunities",
-    "greeting": "Hi, I'm",
-    "title": "I'm a",
-    "role": "Software Engineer.",
-    "description": "Full-Stack Developer focused on Angular, Java/Spring Boot and cloud-native development. I build scalable, accessible and high-quality web applications with a passion for clean architecture and solid testing.",
+    "status": "Available for employment & freelance projects",
+    "greeting": "Software Engineer",
+    "title": "Professional web solutions",
+    "role": "that truly impress.",
+    "description": "From custom business websites for small and medium-sized businesses to scalable full-stack applications — I build digital solutions with 5+ years of experience that delight your clients.",
     "cta": {
       "contact": "Get in touch",
       "projects": "View projects"
     },
     "techStack": "Stack",
-    "scroll": "Scroll"
+    "scroll": "Scroll",
+    "typewriter": {
+      "label": "currently available as",
+      "skills": ["Angular", "TypeScript", "Tailwind CSS", "Java", "Spring Boot", "PostgreSQL", "Docker", "GitLab CI/CD", "Cloud Foundry", "Jest", "Cypress"]
+    }
   },
   "about": {
     "label": "About me",
     "heading": "Software Engineer with",
-    "headingHighlight": "heart and mind.",
-    "p1": "I bring strong expertise in frontend technologies along with broad experience in backend services using Java/Spring Boot.",
-    "p2": "Testing is part of my daily toolkit — unit and integration tests as well as Cypress. I love working agile in Scrum teams, pairing and mob programming.",
-    "p3": "I stand for friendly, open communication with clients and team members alike.",
+    "headingHighlight": "a passion for the web.",
+    "p1": "I build modern, professional web solutions — from custom websites for small and medium-sized businesses to scalable full-stack applications with Angular and Java/Spring Boot.",
+    "p2": "Quality is always at the core: clean code, thoughtful architecture and comprehensive testing. Whether as a freelancer for small and medium-sized businesses or as a developer within a team — I deliver results that make an impact.",
+    "p3": "With an open, approachable communication style, I guide clients and teams from the first idea through to the finished product.",
     "info": {
-      "experience": "2+ years professional experience"
+      "experience": "5+ years IT experience"
     },
     "stats": {
-      "years": "Years of experience",
+      "years": "Years of IT experience",
       "techs": "Technologies",
       "certs": "Certifications"
     }
@@ -60,12 +66,13 @@
     "backend": "Backend",
     "devops": "DevOps & Cloud",
     "tooling": "Tools",
+    "ai": "AI Tools",
     "methods": "Methods"
   },
   "projects": {
     "label": "Highlights",
     "heading": "Selected Projects",
-    "subheading": "A selection of my recent work.",
+    "subheading": "A look at my work — professional solutions for businesses and personal projects.",
     "notification": {
       "title": "Notification Platform",
       "description": "Modernization of a central platform for displaying and managing notifications from various business applications.",
@@ -114,8 +121,8 @@
     "german": "German",
     "english": "English",
     "native": "Native",
-    "c1": "Fluent (C1)",
-    "b2": "Fluent (B2)"
+    "c1": "Negotiation-level",
+    "b2": "Fluent"
   },
   "contact": {
     "label": "Contact",
@@ -140,7 +147,7 @@
     "success": "Your email client should now be open."
   },
   "footer": {
-    "tagline": "Software Engineer focused on Angular, Java/Spring Boot and cloud-native development.",
+    "tagline": "Full-Stack Developer · Custom web solutions for small and medium-sized businesses and enterprises.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "rights": "All rights reserved.",
