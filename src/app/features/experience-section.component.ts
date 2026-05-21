@@ -47,11 +47,7 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
                   </span>
                 </div>
 
-                <p class="text-ink-700 dark:text-ink-300 mb-6 leading-relaxed">
-                  {{ exp.descriptionKey | translate }}
-                </p>
-
-                <ul class="space-y-2 mb-6" role="list">
+                <ul class="space-y-2" role="list">
                   @for (key of exp.highlightKeys; track key) {
                     <li class="flex gap-3 text-sm text-ink-700 dark:text-ink-300">
                       <span class="text-brand-500 flex-shrink-0 mt-1" aria-hidden="true">
@@ -63,13 +59,6 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
                     </li>
                   }
                 </ul>
-
-                <div class="flex flex-wrap gap-1.5 pt-4 border-t border-ink-200 dark:border-ink-800">
-                  @for (tech of exp.technologies; track tech) {
-                    <span class="font-mono text-xs px-2.5 py-1 rounded-md
-                                bg-ink-100 dark:bg-ink-800 text-ink-700 dark:text-ink-300">{{ tech }}</span>
-                  }
-                </div>
               </div>
             </article>
           }
