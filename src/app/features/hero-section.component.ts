@@ -40,7 +40,7 @@ import { ProfileService } from '../core/services/profile.service';
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style="animation-delay: 400ms">
-            <a [routerLink]="['/']" fragment="contact" class="btn-primary">
+            <a [href]="'mailto:' + profile.personal.email" class="btn-primary">
               {{ 'hero.cta.contact' | translate }}
               <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

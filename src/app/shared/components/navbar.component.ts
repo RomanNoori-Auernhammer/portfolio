@@ -21,7 +21,6 @@ export class NavbarComponent {
     { key: 'skills', fragment: 'skills' },
     { key: 'projects', fragment: 'projects' },
     { key: 'education', fragment: 'education' },
-    { key: 'contact', fragment: 'contact' },
   ];
 
   @HostListener('window:scroll')

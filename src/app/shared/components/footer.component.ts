@@ -31,7 +31,6 @@ import { ProfileService } from '../../core/services/profile.service';
             <ul class="space-y-2 text-sm" role="list">
               <li><a [routerLink]="['/']" fragment="about" class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">{{ 'nav.about' | translate }}</a></li>
               <li><a [routerLink]="['/']" fragment="projects" class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">{{ 'nav.projects' | translate }}</a></li>
-              <li><a [routerLink]="['/']" fragment="contact" class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">{{ 'nav.contact' | translate }}</a></li>
             </ul>
           </div>
 
@@ -44,6 +43,12 @@ import { ProfileService } from '../../core/services/profile.service';
                 <a [href]="'mailto:' + profile.personal.email"
                    class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors break-all">
                   {{ profile.personal.email }}
+                </a>
+              </li>
+              <li>
+                <a [href]="'tel:' + profile.personal.phone"
+                   class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">
+                  {{ profile.personal.phone }}
                 </a>
               </li>
               <li class="text-ink-600 dark:text-ink-400">{{ profile.personal.location }}</li>
