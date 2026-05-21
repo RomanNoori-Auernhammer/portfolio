@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "skills": "Skills",
+    "projects": "Projekte",
+    "education": "Ausbildung",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "status": "Offen für neue Herausforderungen",
+    "greeting": "Hallo, ich bin",
+    "title": "Ich bin",
+    "role": "Software Engineer.",
+    "description": "Full-Stack Developer mit Fokus auf Angular, Java/Spring Boot und Cloud-Native Entwicklung. Ich entwickle skalierbare, barrierefreie und qualitativ hochwertige Webanwendungen mit Leidenschaft für saubere Architektur und gute Tests.",
+    "cta": {
+      "contact": "Kontakt aufnehmen",
+      "projects": "Projekte ansehen"
+    },
+    "techStack": "Stack",
+    "scroll": "Scrollen"
+  },
+  "about": {
+    "label": "Über mich",
+    "heading": "Software Engineer mit",
+    "headingHighlight": "Herz und Verstand.",
+    "p1": "Ich bringe große Expertise in Frontend-Technologien mit und biete umfangreiche Erfahrungen mit Backend-Services in Java/Spring Boot.",
+    "p2": "Ich kenne mich aus im Testing — Unit-, Integrationstests und Cypress gehören zu meinem täglichen Werkzeug. Agiles Arbeiten mit Scrum, Pair- und Mob-Programming bereitet mir große Freude.",
+    "p3": "Ich stehe für einen zuvorkommenden und offenen Kommunikationsstil mit Kunden sowie im Team.",
+    "info": {
+      "experience": "2+ Jahre Berufserfahrung"
+    },
+    "stats": {
+      "years": "Jahre Erfahrung",
+      "techs": "Technologien",
+      "certs": "Weiterbildungen"
+    }
+  },
+  "experience": {
+    "label": "Werdegang",
+    "heading": "Berufserfahrung",
+    "subheading": "Stationen, die mich geprägt haben.",
+    "datev": {
+      "position": "Full-Stack Developer",
+      "description": "Weiterentwicklung und Modernisierung einer Benachrichtigungsplattform zum Empfang, zur Anzeige und Verwaltung von Benachrichtigungen aus verschiedenen Fachanwendungen.",
+      "h1": "Entwicklung skalierbarer und barrierefreier Frontend-Komponenten mit Angular, TypeScript und Tailwind CSS",
+      "h2": "Implementierung und Testing von REST-APIs mit Java, Spring Boot und PostgreSQL (JUnit, Mockito, Postman)",
+      "h3": "Sicherstellung hoher Softwarequalität durch TDD, Code-Reviews und statische Codeanalyse (Jest, Cypress, SonarQube, ESLint)",
+      "h4": "Deployment von Anwendungen in der Cloud sowie Pflege von CI/CD-Pipelines (Cloud Foundry, GitLab, GitHub)",
+      "h5": "Analyse von Kundenanforderungen und Dokumentation von Softwareanforderungen (Azure DevOps, Confluence)",
+      "h6": "Agile Arbeitsweise im Scrum-Team mit Pair- und Mob-Programming",
+      "h7": "Wissenstransfer im Team durch interne Fachvorträge"
+    }
+  },
+  "skills": {
+    "label": "Kompetenzen",
+    "heading": "Technologien & Skills",
+    "subheading": "Mein technischer Werkzeugkoffer.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "devops": "DevOps & Cloud",
+    "tooling": "Tools",
+    "methods": "Methoden"
+  },
+  "projects": {
+    "label": "Highlights",
+    "heading": "Ausgewählte Projekte",
+    "subheading": "Eine Auswahl meiner bisherigen Arbeiten.",
+    "notification": {
+      "title": "Benachrichtigungsplattform",
+      "description": "Modernisierung einer zentralen Plattform zur Anzeige und Verwaltung von Benachrichtigungen aus verschiedenen Fachanwendungen.",
+      "h1": "Barrierefreie Frontend-Komponenten in Angular",
+      "h2": "REST-API mit Spring Boot & PostgreSQL",
+      "h3": "Umfassende Testabdeckung mit Jest und Cypress"
+    },
+    "kanzlei": {
+      "title": "Cloudbasierte Kanzleilösung",
+      "description": "Mitarbeit an der Entwicklung einer cloudbasierten Gesamtlösung für das Kanzleimanagement.",
+      "h1": "Full-Stack Entwicklung im Scrum-Team",
+      "h2": "Cloud-Native Deployment mit Cloud Foundry"
+    },
+    "gitlab": {
+      "title": "GitLab Deploy-Bot",
+      "description": "Konzeption und Entwicklung eines Bots zur Automatisierung des Deployvorgangs in GitLab-Merge-Requests.",
+      "h1": "Erhebliche Reduktion manueller Schritte",
+      "h2": "Integration in bestehende CI/CD-Pipelines"
+    }
+  },
+  "education": {
+    "label": "Bildung",
+    "heading": "Ausbildung & Weiterbildung",
+    "educationTitle": "Bildungsweg",
+    "certsTitle": "Weiterbildungen",
+    "languagesTitle": "Sprachen",
+    "ihk": {
+      "degree": "IHK-Fachinformatiker, Anwendungsentwicklung",
+      "description": "Ausbildung mit Fokus auf cloudbasierte Softwareentwicklung."
+    },
+    "school": {
+      "degree": "Mittlere Reife"
+    }
+  },
+  "certs": {
+    "docker": "Docker & Container Grundlagen",
+    "angular": "Angular Vertiefung",
+    "cypress": "Automatisiertes isoliertes Frontend Testing (Cypress)",
+    "typescript": "Vertiefung JavaScript und TypeScript",
+    "aws": "AWS Sustainability Immersion Day",
+    "cn2": "Cloud Native Entwicklung II",
+    "cn1": "Cloud Native Entwicklung I"
+  },
+  "languages": {
+    "persian": "Persisch",
+    "german": "Deutsch",
+    "english": "Englisch",
+    "native": "Muttersprache",
+    "c1": "Verhandlungssicher (C1)",
+    "b2": "Fließend (B2)"
+  },
+  "contact": {
+    "label": "Kontakt",
+    "heading": "Lass uns reden",
+    "subheading": "Ich freue mich auf deine Nachricht — egal ob spannendes Projekt, Job-Möglichkeit oder einfach zum Austausch.",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "location": "Standort",
+    "formNote": "Hinweis: Beim Absenden öffnet sich dein E-Mail-Programm mit den eingetragenen Daten. Es werden keine Daten an einen Server übertragen — DSGVO-konform und ohne Tracking.",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "submit": "Nachricht senden"
+    },
+    "errors": {
+      "required": "Dieses Feld ist erforderlich.",
+      "email": "Bitte gib eine gültige E-Mail-Adresse ein.",
+      "minLength": "Bitte gib mindestens 10 Zeichen ein."
+    },
+    "success": "Dein E-Mail-Programm sollte sich nun geöffnet haben."
+  },
+  "footer": {
+    "tagline": "Software Engineer mit Fokus auf Angular, Java/Spring Boot und Cloud-Native Entwicklung.",
+    "quickLinks": "Schnellzugriff",
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten.",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
+  },
+  "legal": {
+    "imprint": {
+      "title": "Impressum",
+      "section1": "Angaben gemäß § 5 TMG",
+      "section2": "Kontakt",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "disclaimer": "Haftungsausschluss",
+      "disclaimerText": "Die Inhalte dieser Seite wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden."
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "section1": "Allgemeine Hinweise",
+      "section1Text": "Diese Website verarbeitet personenbezogene Daten nur in dem Umfang, der für die Bereitstellung der Website und die Kontaktaufnahme erforderlich ist.",
+      "section2": "Kontaktformular",
+      "section2Text": "Beim Absenden des Kontaktformulars werden die eingegebenen Daten ausschließlich an Ihr lokales E-Mail-Programm übergeben (mailto). Es findet keine serverseitige Speicherung oder Übertragung an Dritte statt.",
+      "section3": "Lokale Speicherung",
+      "section3Text": "Diese Website speichert Ihre Sprach- und Theme-Einstellungen ausschließlich lokal im Browser (localStorage). Diese Daten verlassen Ihr Gerät nicht.",
+      "section4": "Externe Schriftarten",
+      "section4Text": "Diese Website nutzt Google Fonts. Beim Laden der Schriften wird Ihre IP-Adresse an Google übermittelt. Weitere Informationen finden Sie in der Datenschutzerklärung von Google."
+    }
+  }
+}

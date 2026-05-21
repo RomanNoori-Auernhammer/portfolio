@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Roman Noori-Auernhammer | Software Engineer</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Roman Noori-Auernhammer – Software Engineer aus Schwabach. Full-Stack Developer mit Fokus auf Angular, TypeScript, Java/Spring Boot und Cloud-Native Entwicklung." />
+    <meta name="author" content="Roman Noori-Auernhammer" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Roman Noori-Auernhammer | Software Engineer" />
+    <meta property="og:description" content="Full-Stack Developer mit Fokus auf Angular, Java/Spring Boot und Cloud-Native." />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (theme === 'dark' || (!theme && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-white text-ink-900 dark:bg-ink-950 dark:text-ink-100 antialiased">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-brand-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-md">
+      Zum Hauptinhalt springen
+    </a>
+    <app-root></app-root>
+  </body>
+</html>
