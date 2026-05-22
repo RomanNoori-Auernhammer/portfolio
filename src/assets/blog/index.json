@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "claude-code-im-alltag",
+    "title": "Claude Code im Entwickleralltag — meine Erfahrungen",
+    "date": "2026-05-20",
+    "excerpt": "Seit einigen Monaten arbeite ich täglich mit Claude Code. Was anfangs wie ein weiteres KI-Tool wirkte, hat meinen Workflow grundlegend verändert — hier teile ich, was mich wirklich überrascht hat."
+  },
+  {
+    "slug": "angular-signals-praxis",
+    "title": "Angular Signals in der Praxis — wann sie wirklich helfen",
+    "date": "2026-04-10",
+    "excerpt": "Signals sind seit Angular 16 offiziell und ich nutze sie inzwischen produktiv. In diesem Post zeige ich konkrete Anwendungsfälle aus meinem Projektalltag und wo ich noch auf klassisches RxJS setze."
+  }
+]

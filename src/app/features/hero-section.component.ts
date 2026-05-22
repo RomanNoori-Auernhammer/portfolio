@@ -19,10 +19,14 @@ import { ProfileService } from '../core/services/profile.service';
 
           <!-- Text -->
           <div>
-            <p class="inline-flex items-center gap-3 text-sm font-medium text-brand-600 dark:text-brand-400 mb-8 animate-fade-in">
-              <span class="h-px w-8 bg-brand-500 shrink-0"></span>
-              {{ 'hero.greeting' | translate }}
-            </p>
+            <div class="flex items-center gap-4 mb-8 animate-fade-in">
+              <img src="assets/images/profile.jpg" alt="Roman Noori-Auernhammer"
+                   class="h-14 w-14 rounded-full object-cover object-top ring-2 ring-brand-500/40 shrink-0" />
+              <p class="inline-flex items-center gap-3 text-sm font-medium text-brand-600 dark:text-brand-400">
+                <span class="h-px w-8 bg-brand-500 shrink-0"></span>
+                {{ 'hero.greeting' | translate }}
+              </p>
+            </div>
 
             <h1 class="font-display text-5xl sm:text-6xl xl:text-7xl font-bold leading-[1.05] mb-6 animate-fade-in-up" style="animation-delay: 100ms">
               <span class="block text-ink-900 dark:text-ink-50">{{ 'hero.title' | translate }}</span>

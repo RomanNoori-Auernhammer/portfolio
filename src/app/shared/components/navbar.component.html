@@ -5,7 +5,7 @@
     : ''"
 >
   <nav class="container-custom flex h-16 items-center justify-between" aria-label="Hauptnavigation">
-    <a routerLink="/" class="group flex items-center gap-2 font-display font-bold text-lg">
+    <a [routerLink]="['/']" fragment="home" class="group flex items-center gap-2 font-display font-bold text-lg">
       <span class="flex h-9 w-9 items-center justify-center rounded-lg
                    bg-gradient-to-br from-brand-400 to-brand-600
                    text-white font-bold text-base shadow-lg shadow-brand-500/30
@@ -14,15 +14,22 @@
     </a>
 
     <ul class="hidden md:flex items-center gap-1" role="list">
-      @for (item of navItems; track item.route) {
+      @for (item of navItems; track item.key) {
         <li>
-          <a [routerLink]="item.route"
-             routerLinkActive="text-brand-500 dark:text-brand-400"
-             [routerLinkActiveOptions]="{ exact: item.route === '/' }"
-             class="px-4 py-2 text-sm font-medium text-ink-700 dark:text-ink-300
-                    transition-colors hover:text-brand-500 dark:hover:text-brand-400 rounded-md">
-            {{ 'nav.' + item.key | translate }}
-          </a>
+          @if (item.route) {
+            <a [routerLink]="item.route"
+               routerLinkActive="text-brand-500 dark:text-brand-400"
+               class="px-4 py-2 text-sm font-medium text-ink-700 dark:text-ink-300
+                      transition-colors hover:text-brand-500 dark:hover:text-brand-400 rounded-md">
+              {{ 'nav.' + item.key | translate }}
+            </a>
+          } @else {
+            <a [routerLink]="['/']" [fragment]="item.fragment"
+               class="px-4 py-2 text-sm font-medium text-ink-700 dark:text-ink-300
+                      transition-colors hover:text-brand-500 dark:hover:text-brand-400 rounded-md">
+              {{ 'nav.' + item.key | translate }}
+            </a>
+          }
         </li>
       }
     </ul>
@@ -54,17 +61,24 @@
     <div id="mobile-menu"
       class="md:hidden border-t border-ink-200 dark:border-ink-800 bg-white dark:bg-ink-950 animate-fade-in-up">
       <ul class="container-custom py-4 space-y-1" role="list">
-        @for (item of navItems; track item.route) {
+        @for (item of navItems; track item.key) {
           <li>
-            <a [routerLink]="item.route"
-               routerLinkActive="text-brand-500 bg-brand-500/10"
-               [routerLinkActiveOptions]="{ exact: item.route === '/' }"
-               (click)="closeMobileMenu()"
-               class="block px-4 py-3 text-base font-medium rounded-lg
-                      text-ink-700 dark:text-ink-300
-                      hover:bg-brand-500/10 hover:text-brand-500">
-              {{ 'nav.' + item.key | translate }}
-            </a>
+            @if (item.route) {
+              <a [routerLink]="item.route" (click)="closeMobileMenu()"
+                 routerLinkActive="text-brand-500 bg-brand-500/10"
+                 class="block px-4 py-3 text-base font-medium rounded-lg
+                        text-ink-700 dark:text-ink-300
+                        hover:bg-brand-500/10 hover:text-brand-500">
+                {{ 'nav.' + item.key | translate }}
+              </a>
+            } @else {
+              <a [routerLink]="['/']" [fragment]="item.fragment" (click)="closeMobileMenu()"
+                 class="block px-4 py-3 text-base font-medium rounded-lg
+                        text-ink-700 dark:text-ink-300
+                        hover:bg-brand-500/10 hover:text-brand-500">
+                {{ 'nav.' + item.key | translate }}
+              </a>
+            }
           </li>
         }
       </ul>

@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About",
     "portfolio": "Portfolio",
+    "blog": "Blog",
     "experience": "Experience",
     "skills": "Skills",
     "projects": "Projects",
@@ -46,16 +47,22 @@
     "label": "Career",
     "heading": "Work Experience",
     "subheading": "Stations that shaped me.",
-    "datev": {
-      "position": "Full-Stack Developer",
-      "description": "Further development and modernization of a notification platform for receiving, displaying and managing notifications from various business applications.",
-      "h1": "Development of scalable and accessible frontend components with Angular, TypeScript and Tailwind CSS",
-      "h2": "Implementation and testing of REST APIs with Java, Spring Boot and PostgreSQL (JUnit, Mockito, Postman)",
-      "h3": "Ensuring high software quality through TDD, code reviews and static code analysis (Jest, Cypress, SonarQube, ESLint)",
-      "h4": "Deployment of applications in the cloud and maintenance of CI/CD pipelines (Cloud Foundry, GitLab, GitHub)",
-      "h5": "Analysis of customer requirements and documentation (Azure DevOps, Confluence)",
-      "h6": "Agile work in Scrum team with pair and mob programming",
-      "h7": "Knowledge transfer within the team through internal talks"
+    "datevJob": {
+      "position": "Full-Stack Developer (Permanent)",
+      "description": "",
+      "h1": "Further development of a notification platform for internal business applications using Angular, TypeScript and Java/Spring Boot",
+      "h2": "End-to-end feature ownership — from requirements analysis and design to deployment in Cloud Foundry",
+      "h3": "Ensuring high software quality through TDD, code reviews and static code analysis (Jest, Cypress, SonarQube)",
+      "h4": "Maintaining and extending GitLab CI/CD pipelines; active contribution in Scrum team",
+      "h5": "Pair and mob programming as well as internal tech talks for knowledge sharing",
+      "h6": "Close collaboration with product management and QA to align on requirements"
+    },
+    "datevAusbildung": {
+      "position": "IT Specialist, Application Development (Apprenticeship)",
+      "description": "",
+      "h1": "Apprenticeship focused on full-stack development: Angular, TypeScript, Java, Spring Boot and PostgreSQL",
+      "h2": "Active contribution to a production software project from the second year onwards",
+      "h3": "Completed as certified IHK IT Specialist, Application Development (02/2024)"
     }
   },
   "skills": {
@@ -145,6 +152,12 @@
       "minLength": "Please enter at least 10 characters."
     },
     "success": "Your email client should now be open."
+  },
+  "blog": {
+    "label": "Blog",
+    "heading": "From my practice",
+    "subheading": "What I'm working on — experiences, learnings and thoughts from everyday development.",
+    "readMore": "Read more"
   },
   "footer": {
     "tagline": "Full-Stack Developer · Custom web solutions for small and medium-sized businesses and enterprises.",

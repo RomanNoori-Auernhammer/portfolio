@@ -26,19 +26,13 @@ describe('ProfileService', () => {
   });
 
   describe('experiences', () => {
-    it('should contain at least one experience', () => {
-      expect(service.experiences.length).toBeGreaterThan(0);
+    it('should contain 2 experiences (Festanstellung + Ausbildung)', () => {
+      expect(service.experiences.length).toBe(2);
     });
 
-    it('should have DATEV as employer in the most recent experience', () => {
-      const datev = service.experiences.find((e) => e.id === 'datev-fullstack');
-      expect(datev).toBeDefined();
-      expect(datev?.company).toBe('DATEV eG');
-    });
-
-    it('should have technologies for each experience', () => {
+    it('should have DATEV as employer for both experiences', () => {
       service.experiences.forEach((exp) => {
-        expect(exp.technologies.length).toBeGreaterThan(0);
+        expect(exp.company).toBe('DATEV eG');
       });
     });
 

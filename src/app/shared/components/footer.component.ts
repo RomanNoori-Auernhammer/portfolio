@@ -29,9 +29,9 @@ import { ProfileService } from '../../core/services/profile.service';
               {{ 'footer.quickLinks' | translate }}
             </h3>
             <ul class="space-y-2 text-sm" role="list">
-              <li><a routerLink="/" class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">{{ 'nav.home' | translate }}</a></li>
-              <li><a routerLink="/about" class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">{{ 'nav.about' | translate }}</a></li>
-              <li><a routerLink="/portfolio" class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">{{ 'nav.portfolio' | translate }}</a></li>
+              <li><a [routerLink]="['/']" fragment="about" class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">{{ 'nav.about' | translate }}</a></li>
+              <li><a [routerLink]="['/']" fragment="projects" class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">{{ 'nav.portfolio' | translate }}</a></li>
+              <li><a routerLink="/blog" class="text-ink-600 dark:text-ink-400 hover:text-brand-500 transition-colors">{{ 'nav.blog' | translate }}</a></li>
             </ul>
           </div>
 

@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "Über mich",
     "portfolio": "Portfolio",
+    "blog": "Blog",
     "experience": "Erfahrung",
     "skills": "Skills",
     "projects": "Projekte",
@@ -46,16 +47,22 @@
     "label": "Werdegang",
     "heading": "Berufserfahrung",
     "subheading": "Stationen, die mich geprägt haben.",
-    "datev": {
-      "position": "Full-Stack Developer",
-      "description": "Weiterentwicklung und Modernisierung einer Benachrichtigungsplattform zum Empfang, zur Anzeige und Verwaltung von Benachrichtigungen aus verschiedenen Fachanwendungen.",
-      "h1": "Entwicklung skalierbarer und barrierefreier Frontend-Komponenten mit Angular, TypeScript und Tailwind CSS",
-      "h2": "Implementierung und Testing von REST-APIs mit Java, Spring Boot und PostgreSQL (JUnit, Mockito, Postman)",
-      "h3": "Sicherstellung hoher Softwarequalität durch TDD, Code-Reviews und statische Codeanalyse (Jest, Cypress, SonarQube, ESLint)",
-      "h4": "Deployment von Anwendungen in der Cloud sowie Pflege von CI/CD-Pipelines (Cloud Foundry, GitLab, GitHub)",
-      "h5": "Analyse von Kundenanforderungen und Dokumentation von Softwareanforderungen (Azure DevOps, Confluence)",
-      "h6": "Agile Arbeitsweise im Scrum-Team mit Pair- und Mob-Programming",
-      "h7": "Wissenstransfer im Team durch interne Fachvorträge"
+    "datevJob": {
+      "position": "Full-Stack Developer (Festanstellung)",
+      "description": "",
+      "h1": "Weiterentwicklung einer Benachrichtigungsplattform für interne Fachanwendungen mit Angular, TypeScript und Java/Spring Boot",
+      "h2": "Eigenverantwortliche Umsetzung von Features — von der Anforderungsanalyse über das Design bis zum Deployment in Cloud Foundry",
+      "h3": "Sicherstellung hoher Softwarequalität durch TDD, Code-Reviews und statische Codeanalyse (Jest, Cypress, SonarQube)",
+      "h4": "Pflege und Erweiterung von GitLab CI/CD-Pipelines sowie aktive Mitarbeit im Scrum-Team",
+      "h5": "Pair- und Mob-Programming sowie interne Fachvorträge zum Wissenstransfer",
+      "h6": "Enge Zusammenarbeit mit Produktmanagement und QA zur Abstimmung von Anforderungen"
+    },
+    "datevAusbildung": {
+      "position": "Fachinformatiker Anwendungsentwicklung (Ausbildung)",
+      "description": "",
+      "h1": "Ausbildung mit Fokus auf Full-Stack-Entwicklung: Angular, TypeScript, Java, Spring Boot und PostgreSQL",
+      "h2": "Aktive Mitarbeit an einem produktiven Softwareprojekt ab dem zweiten Ausbildungsjahr",
+      "h3": "Abschluss als IHK-Fachinformatiker Anwendungsentwicklung (02/2024)"
     }
   },
   "skills": {
@@ -145,6 +152,12 @@
       "minLength": "Bitte gib mindestens 10 Zeichen ein."
     },
     "success": "Dein E-Mail-Programm sollte sich nun geöffnet haben."
+  },
+  "blog": {
+    "label": "Blog",
+    "heading": "Aus meiner Praxis",
+    "subheading": "Womit ich mich beschäftige — Erfahrungen, Learnings und Gedanken aus dem Entwickleralltag.",
+    "readMore": "Weiterlesen"
   },
   "footer": {
     "tagline": "Full-Stack Developer · Individuelle Weblösungen für kleine und mittelgroße Unternehmen und Unternehmen.",

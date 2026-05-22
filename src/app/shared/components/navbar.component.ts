@@ -15,10 +15,10 @@ export class NavbarComponent {
   readonly isScrolled = signal(false);
   readonly isMobileMenuOpen = signal(false);
 
-  readonly navItems = [
-    { key: 'home', route: '/' },
-    { key: 'about', route: '/about' },
-    { key: 'portfolio', route: '/portfolio' },
+  readonly navItems: { key: string; fragment?: string; route?: string }[] = [
+    { key: 'about', fragment: 'about' },
+    { key: 'portfolio', fragment: 'projects' },
+    { key: 'blog', route: '/blog' },
   ];
 
   @HostListener('window:scroll')

@@ -7,14 +7,14 @@ export const routes: Routes = [
     title: 'Roman Noori-Auernhammer | Software Engineer',
   },
   {
-    path: 'about',
-    loadComponent: () => import('./features/about-page.component').then((m) => m.AboutPageComponent),
-    title: 'Über mich | Roman Noori-Auernhammer',
+    path: 'blog',
+    loadComponent: () => import('./features/blog-list-page.component').then((m) => m.BlogListPageComponent),
+    title: 'Blog | Roman Noori-Auernhammer',
   },
   {
-    path: 'portfolio',
-    loadComponent: () => import('./features/portfolio-page.component').then((m) => m.PortfolioPageComponent),
-    title: 'Portfolio | Roman Noori-Auernhammer',
+    path: 'blog/:slug',
+    loadComponent: () => import('./features/blog-post.component').then((m) => m.BlogPostComponent),
+    title: 'Blog | Roman Noori-Auernhammer',
   },
   {
     path: 'imprint',

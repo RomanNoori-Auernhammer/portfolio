@@ -18,21 +18,30 @@ export class ProfileService {
     {
       id: 'datev-fullstack',
       company: 'DATEV eG',
-      positionKey: 'experience.datev.position',
+      positionKey: 'experience.datevJob.position',
       startDate: '2024-02',
       endDate: '2026-02',
       current: false,
-      descriptionKey: 'experience.datev.description',
+      descriptionKey: 'experience.datevJob.description',
       highlightKeys: [
-        'experience.datev.h1', 'experience.datev.h2', 'experience.datev.h3',
-        'experience.datev.h4', 'experience.datev.h5', 'experience.datev.h6',
-        'experience.datev.h7',
+        'experience.datevJob.h1', 'experience.datevJob.h2', 'experience.datevJob.h3',
+        'experience.datevJob.h4', 'experience.datevJob.h5', 'experience.datevJob.h6',
       ],
-      technologies: [
-        'Angular', 'TypeScript', 'Tailwind CSS', 'Java', 'Spring Boot',
-        'PostgreSQL', 'JUnit', 'Mockito', 'Jest', 'Cypress', 'SonarQube',
-        'Cloud Foundry', 'GitLab CI/CD',
+      technologies: [],
+    },
+    {
+      id: 'datev-ausbildung',
+      company: 'DATEV eG',
+      positionKey: 'experience.datevAusbildung.position',
+      startDate: '2020-09',
+      endDate: '2024-02',
+      current: false,
+      descriptionKey: 'experience.datevAusbildung.description',
+      highlightKeys: [
+        'experience.datevAusbildung.h1', 'experience.datevAusbildung.h2',
+        'experience.datevAusbildung.h3',
       ],
+      technologies: [],
     },
   ];
 
