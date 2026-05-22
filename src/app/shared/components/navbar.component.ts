@@ -16,6 +16,7 @@ export class NavbarComponent {
   readonly isMobileMenuOpen = signal(false);
 
   readonly navItems: { key: string; fragment?: string; route?: string }[] = [
+    { key: 'home', fragment: 'home' },
     { key: 'about', fragment: 'about' },
     { key: 'portfolio', fragment: 'projects' },
     { key: 'blog', route: '/blog' },

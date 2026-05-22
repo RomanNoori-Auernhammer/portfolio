@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes scrollFade {
+  0%, 100% { opacity: 0.2; transform: translateY(-4px); }
+  50%       { opacity: 1;   transform: translateY(4px); }
+}
+
 @layer base {
   html { scroll-behavior: smooth; }
   @media (prefers-reduced-motion: reduce) {
