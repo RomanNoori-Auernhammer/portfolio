@@ -55,18 +55,18 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
               <p>{{ 'about.p3' | translate }}</p>
             </div>
 
-            <div class="grid grid-cols-3 gap-4 pt-4">
-              <div class="text-center p-4 rounded-xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800">
-                <div class="font-display text-3xl font-bold gradient-text">5+</div>
-                <div class="text-xs text-ink-600 dark:text-ink-400 mt-1">{{ 'about.stats.years' | translate }}</div>
+            <div class="grid grid-cols-3 gap-2 sm:gap-4 pt-4">
+              <div class="text-center p-2 sm:p-4 rounded-xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800">
+                <div class="font-display text-2xl sm:text-3xl font-bold gradient-text">5+</div>
+                <div class="text-[10px] sm:text-xs text-ink-600 dark:text-ink-400 mt-1 leading-tight">{{ 'about.stats.years' | translate }}</div>
               </div>
-              <div class="text-center p-4 rounded-xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800">
-                <div class="font-display text-3xl font-bold gradient-text">30+</div>
-                <div class="text-xs text-ink-600 dark:text-ink-400 mt-1">{{ 'about.stats.techs' | translate }}</div>
+              <div class="text-center p-2 sm:p-4 rounded-xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800">
+                <div class="font-display text-2xl sm:text-3xl font-bold gradient-text">30+</div>
+                <div class="text-[10px] sm:text-xs text-ink-600 dark:text-ink-400 mt-1 leading-tight">{{ 'about.stats.techs' | translate }}</div>
               </div>
-              <div class="text-center p-4 rounded-xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800">
-                <div class="font-display text-3xl font-bold gradient-text">7</div>
-                <div class="text-xs text-ink-600 dark:text-ink-400 mt-1">{{ 'about.stats.certs' | translate }}</div>
+              <div class="text-center p-2 sm:p-4 rounded-xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800">
+                <div class="font-display text-2xl sm:text-3xl font-bold gradient-text">7</div>
+                <div class="text-[10px] sm:text-xs text-ink-600 dark:text-ink-400 mt-1 leading-tight">{{ 'about.stats.certs' | translate }}</div>
               </div>
             </div>
           </div>
