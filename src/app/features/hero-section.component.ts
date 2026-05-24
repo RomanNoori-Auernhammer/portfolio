@@ -15,12 +15,12 @@ import { ProfileService } from '../core/services/profile.service';
       <div class="absolute bottom-20 left-10 h-72 w-72 rounded-full bg-brand-400/10 blur-3xl animate-float" style="animation-delay: -3s" aria-hidden="true"></div>
 
       <div class="container-custom relative z-10 py-6 md:py-12 lg:py-20 w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center animate-fade-in">
 
           <!-- Text -->
           <div>
             <!-- Mobile: greeting + small avatar inline -->
-            <div class="flex items-center gap-3 mb-8 animate-fade-in lg:hidden">
+            <div class="flex items-center gap-3 mb-8 lg:hidden">
               <img src="assets/images/profile.jpg" alt="Roman Noori-Auernhammer"
                    class="h-11 w-11 rounded-full object-cover object-top ring-2 ring-brand-500/30 shrink-0" />
               <p class="inline-flex items-center gap-3 text-sm font-medium text-brand-600 dark:text-brand-400">
@@ -29,21 +29,21 @@ import { ProfileService } from '../core/services/profile.service';
               </p>
             </div>
             <!-- Desktop: greeting only -->
-            <p class="hidden lg:inline-flex items-center gap-3 text-sm font-medium text-brand-600 dark:text-brand-400 mb-8 animate-fade-in">
+            <p class="hidden lg:inline-flex items-center gap-3 text-sm font-medium text-brand-600 dark:text-brand-400 mb-8">
               <span class="h-px w-8 bg-brand-500 shrink-0"></span>
               {{ 'hero.greeting' | translate }}
             </p>
 
-            <h1 class="font-display text-5xl sm:text-6xl xl:text-7xl font-bold leading-[1.05] mb-6 animate-fade-in-up" style="animation-delay: 100ms">
+            <h1 class="font-display text-5xl sm:text-6xl xl:text-7xl font-bold leading-[1.05] mb-6">
               <span class="block text-ink-900 dark:text-ink-50">{{ 'hero.title' | translate }}</span>
               <span class="block gradient-text">{{ 'hero.role' | translate }}</span>
             </h1>
 
-            <p class="text-lg md:text-xl text-ink-600 dark:text-ink-400 mb-10 leading-relaxed animate-fade-in-up" style="animation-delay: 200ms">
+            <p class="text-lg md:text-xl text-ink-600 dark:text-ink-400 mb-10 leading-relaxed">
               {{ 'hero.description' | translate }}
             </p>
 
-            <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style="animation-delay: 300ms">
+            <div class="flex flex-col sm:flex-row gap-4">
               <a [href]="'mailto:' + profile.personal.email" class="btn-primary">
                 {{ 'hero.cta.contact' | translate }}
                 <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -57,7 +57,7 @@ import { ProfileService } from '../core/services/profile.service';
           </div>
 
           <!-- Portrait + Code-Editor: only on large screens -->
-          <div class="hidden lg:flex flex-col items-center gap-4 animate-fade-in-up" style="animation-delay: 150ms">
+          <div class="hidden lg:flex flex-col items-center gap-4">
 
             <!-- Portrait -->
             <div class="relative w-64">
