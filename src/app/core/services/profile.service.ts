@@ -11,8 +11,8 @@ export class ProfileService {
     email: 'r.noori.auernhammer@gmail.com',
     phone: '+49 178 8050054',
     github: 'https://github.com/',
-    linkedin: 'https://www.linkedin.com/',
-    xing: 'https://www.xing.com/',
+    linkedin: 'https://www.linkedin.com/in/roman-noori-auernhammer-6b22a6205',
+    xing: 'https://www.xing.com/profile/Roman_NooriAuernhammer/web_profiles',
   };
 
   readonly experiences: Experience[] = [

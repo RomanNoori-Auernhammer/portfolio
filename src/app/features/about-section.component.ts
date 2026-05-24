@@ -16,7 +16,7 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
               <div class="absolute -inset-4 bg-gradient-to-br from-brand-500/20 to-brand-700/10 rounded-3xl blur-2xl" aria-hidden="true"></div>
               <div class="relative card !p-8 bg-gradient-to-br from-white to-ink-50 dark:from-ink-900 dark:to-ink-800">
                 <div class="aspect-square rounded-2xl overflow-hidden">
-                  <img src="assets/images/profile.jpg" alt="Roman Noori-Auernhammer"
+                  <img src="assets/images/profile-about.jpg" alt="Roman Noori-Auernhammer"
                        class="w-full h-full object-cover object-top" />
                 </div>
                 <div class="mt-6 space-y-3">
