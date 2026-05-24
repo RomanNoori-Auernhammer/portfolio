@@ -9,7 +9,7 @@ import { ProfileService } from '../core/services/profile.service';
   imports: [RouterLink, TranslateModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <section id="home" class="relative min-h-[calc(100svh)] lg:min-h-screen flex items-center overflow-hidden pt-16 pb-20 md:pb-0">
+    <section id="home" class="relative min-h-[calc(100svh)] lg:min-h-screen flex items-center overflow-hidden pt-16 md:pt-24 pb-20 md:pb-0">
       <div class="absolute inset-0 bg-grid-pattern opacity-40" aria-hidden="true"></div>
       <div class="absolute top-20 right-1/3 h-96 w-96 rounded-full bg-brand-500/15 blur-3xl animate-float" aria-hidden="true"></div>
       <div class="absolute bottom-20 left-10 h-72 w-72 rounded-full bg-brand-400/10 blur-3xl animate-float" style="animation-delay: -3s" aria-hidden="true"></div>
@@ -34,7 +34,7 @@ import { ProfileService } from '../core/services/profile.service';
               {{ 'hero.greeting' | translate }}
             </p>
 
-            <h1 class="font-display text-5xl sm:text-6xl xl:text-7xl font-bold leading-[1.05] mb-6">
+            <h1 class="font-display text-5xl sm:text-6xl xl:text-7xl font-bold leading-[1.15] mb-6">
               <span class="block text-ink-900 dark:text-ink-50">{{ 'hero.title' | translate }}</span>
               <span class="block gradient-text">{{ 'hero.role' | translate }}</span>
             </h1>
@@ -44,20 +44,20 @@ import { ProfileService } from '../core/services/profile.service';
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4">
-              <a [href]="'mailto:' + profile.personal.email" class="btn-primary">
-                {{ 'hero.cta.contact' | translate }}
+              <a [routerLink]="['/']" fragment="projects" class="btn-primary">
+                {{ 'hero.cta.projects' | translate }}
                 <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </a>
-              <a [routerLink]="['/']" fragment="projects" class="btn-secondary">
-                {{ 'hero.cta.projects' | translate }}
+              <a [href]="'mailto:' + profile.personal.email" class="btn-secondary md:hidden">
+                {{ 'hero.cta.contact' | translate }}
               </a>
             </div>
           </div>
 
           <!-- Portrait + Code-Editor: only on large screens -->
-          <div class="hidden lg:flex flex-col items-center gap-4">
+          <div class="hidden lg:flex flex-col items-end gap-4">
 
             <!-- Portrait -->
             <div class="relative w-64">

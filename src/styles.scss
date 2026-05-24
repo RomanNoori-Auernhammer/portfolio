@@ -45,7 +45,7 @@
   }
   .section-padding { @apply py-20 lg:py-28; }
   .gradient-text {
-    @apply bg-gradient-to-r from-brand-400 via-brand-500 to-brand-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-brand-400 via-brand-500 to-brand-600 bg-clip-text text-transparent pb-1;
   }
   .card {
     @apply rounded-2xl border border-ink-300 dark:border-ink-700
