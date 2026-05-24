@@ -23,6 +23,15 @@ describe('ProfileService', () => {
     it('should have a location', () => {
       expect(service.personal.location).toContain('Schwabach');
     });
+
+    it('should have a phone number', () => {
+      expect(service.personal.phone).toMatch(/^\+\d+/);
+    });
+
+    it('should have linkedin and xing urls', () => {
+      expect(service.personal.linkedin).toMatch(/^https?:\/\//);
+      expect(service.personal.xing).toMatch(/^https?:\/\//);
+    });
   });
 
   describe('experiences', () => {

@@ -12,6 +12,7 @@ export class ProfileService {
     phone: '+49 178 8050054',
     github: 'https://github.com/',
     linkedin: 'https://www.linkedin.com/',
+    xing: 'https://www.xing.com/',
   };
 
   readonly experiences: Experience[] = [

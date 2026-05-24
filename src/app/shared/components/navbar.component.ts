@@ -1,8 +1,9 @@
-import { ChangeDetectionStrategy, Component, HostListener, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitcherComponent } from './language-switcher.component';
 import { ThemeToggleComponent } from './theme-toggle.component';
+import { ProfileService } from '../../core/services/profile.service';
 
 @Component({
   selector: 'app-navbar',
@@ -12,6 +13,7 @@ import { ThemeToggleComponent } from './theme-toggle.component';
   templateUrl: './navbar.component.html',
 })
 export class NavbarComponent {
+  readonly profile = inject(ProfileService);
   readonly isScrolled = signal(false);
   readonly isMobileMenuOpen = signal(false);
 
