@@ -18,6 +18,14 @@ export class RevealDirective implements OnInit, OnDestroy {
       this.renderer.setStyle(this.el.nativeElement, 'opacity', '1');
       return;
     }
+
+    const rect = this.el.nativeElement.getBoundingClientRect();
+    const alreadyVisible = rect.top < window.innerHeight && rect.bottom > 0;
+    if (alreadyVisible) {
+      this.trigger();
+      return;
+    }
+
     this.renderer.setStyle(this.el.nativeElement, 'opacity', '0');
 
     if (!('IntersectionObserver' in window)) {
