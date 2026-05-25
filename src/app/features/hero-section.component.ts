@@ -15,7 +15,7 @@ import { ProfileService } from '../core/services/profile.service';
       <div class="absolute bottom-20 left-10 h-72 w-72 rounded-full bg-brand-400/10 blur-3xl animate-float" style="animation-delay: -3s" aria-hidden="true"></div>
 
       <div class="container-custom relative z-10 py-6 md:py-12 lg:py-20 w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center animate-fade-in">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
           <!-- Text -->
           <div>
