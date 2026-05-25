@@ -6,7 +6,7 @@ import { Directive, ElementRef, inject, Input, OnDestroy, OnInit, Renderer2 } fr
 })
 export class RevealDirective implements OnInit, OnDestroy {
   @Input() revealDelay = 0;
-  @Input() revealThreshold = 0.15;
+  @Input() revealThreshold = 0.05;
 
   private readonly el = inject(ElementRef<HTMLElement>);
   private readonly renderer = inject(Renderer2);
