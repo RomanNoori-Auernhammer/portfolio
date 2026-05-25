@@ -11,7 +11,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
-function initTranslations(translate: TranslateService) {
+export function initTranslations(translate: TranslateService) {
   return () => firstValueFrom(translate.use(translate.getDefaultLang() ?? 'de'));
 }
 
