@@ -22,7 +22,6 @@ export class RevealDirective implements OnInit, OnDestroy {
     const rect = this.el.nativeElement.getBoundingClientRect();
     const alreadyVisible = rect.top < window.innerHeight && rect.bottom > 0;
     if (alreadyVisible) {
-      this.trigger();
       return;
     }
 
