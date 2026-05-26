@@ -44,14 +44,21 @@ import { ProfileService } from '../core/services/profile.service';
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4">
-              <a [routerLink]="['/']" fragment="projects" class="btn-primary">
-                {{ 'hero.cta.projects' | translate }}
-                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
+              <!-- Mobile: Termin vereinbaren (grün/primary) + Projekte (secondary) -->
+              <a href="https://calendly.com/r-noori-auernhammer/30min" target="_blank" rel="noopener noreferrer"
+                 class="btn-primary md:hidden">
+                {{ 'hero.cta.booking' | translate }}
               </a>
-              <a [href]="'mailto:' + profile.personal.email" class="btn-secondary md:hidden">
-                {{ 'hero.cta.contact' | translate }}
+              <a [routerLink]="['/']" fragment="projects" class="btn-secondary md:hidden">
+                {{ 'hero.cta.projects' | translate }}
+              </a>
+              <!-- Desktop: Termin vereinbaren (primary) -->
+              <a href="https://calendly.com/r-noori-auernhammer/30min" target="_blank" rel="noopener noreferrer"
+                 class="btn-primary hidden md:inline-flex">
+                {{ 'hero.cta.booking' | translate }}
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
               </a>
             </div>
           </div>
