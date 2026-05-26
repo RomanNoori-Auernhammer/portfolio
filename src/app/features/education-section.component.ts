@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, inject, signal, ViewChild } from '@angular/core';
 import { DatePipe } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { ProfileService } from '../core/services/profile.service';
@@ -82,20 +82,18 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
                 </span>
                 {{ 'education.languagesTitle' | translate }}
               </h3>
-              <ul class="space-y-3" role="list">
+              <ul class="space-y-4" role="list" #langSection>
                 @for (lang of profile.languages; track lang.nameKey) {
-                  <li class="flex items-center justify-between gap-4">
-                    <div class="flex-1 min-w-0">
-                      <div class="flex justify-between items-baseline mb-1">
-                        <span class="font-medium text-sm text-ink-900 dark:text-ink-100">{{ lang.nameKey | translate }}</span>
-                        @if (lang.levelKey) {
-                          <span class="text-xs text-ink-500">{{ lang.levelKey | translate }}</span>
-                        }
-                      </div>
-                      <div class="h-1.5 bg-ink-200 dark:bg-ink-800 rounded-full overflow-hidden">
-                        <div class="h-full bg-gradient-to-r from-brand-400 to-brand-600 rounded-full transition-all duration-700"
-                             [style.width.%]="lang.proficiency * 20"></div>
-                      </div>
+                  <li>
+                    <div class="flex justify-between items-baseline mb-2">
+                      <span class="font-medium text-sm text-ink-900 dark:text-ink-100">{{ lang.nameKey | translate }}</span>
+                      @if (lang.levelKey) {
+                        <span class="text-xs text-ink-500">{{ lang.levelKey | translate }}</span>
+                      }
+                    </div>
+                    <div class="h-3 bg-ink-200 dark:bg-ink-800 rounded-full overflow-hidden">
+                      <div class="h-full bg-gradient-to-r from-brand-400 to-brand-600 rounded-full transition-all duration-1000 ease-out"
+                           [style.width.%]="langAnimated() ? lang.proficiency * 20 : 0"></div>
                     </div>
                   </li>
                 }
@@ -107,6 +105,22 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
     </section>
   `,
 })
-export class EducationSectionComponent {
+export class EducationSectionComponent implements AfterViewInit {
   readonly profile = inject(ProfileService);
+  readonly langAnimated = signal(false);
+
+  @ViewChild('langSection') langSection!: ElementRef;
+
+  ngAfterViewInit(): void {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          this.langAnimated.set(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 },
+    );
+    observer.observe(this.langSection.nativeElement);
+  }
 }
