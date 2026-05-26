@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, HostListener, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, HostListener, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitcherComponent } from './language-switcher.component';
@@ -17,6 +17,8 @@ export class NavbarComponent {
   readonly isScrolled = signal(false);
   readonly isMobileMenuOpen = signal(false);
 
+  private readonly elRef = inject(ElementRef);
+
   readonly navItems: { key: string; fragment?: string; route?: string }[] = [
     { key: 'home', fragment: 'home' },
     { key: 'about', fragment: 'about' },
@@ -27,6 +29,13 @@ export class NavbarComponent {
   @HostListener('window:scroll')
   onScroll(): void {
     this.isScrolled.set(window.scrollY > 20);
+  }
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent): void {
+    if (this.isMobileMenuOpen() && !this.elRef.nativeElement.contains(event.target)) {
+      this.isMobileMenuOpen.set(false);
+    }
   }
 
   toggleMobileMenu(): void {
