@@ -21,7 +21,7 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           @for (project of profile.projects; track project.id; let i = $index) {
             <article appReveal [revealDelay]="i * 100"
                      class="card group flex flex-col h-full">

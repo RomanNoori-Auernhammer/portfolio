@@ -10,8 +10,8 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
   template: `
     <section id="about" class="section-padding bg-ink-100 dark:bg-ink-900/30">
       <div class="container-custom">
-        <div class="grid lg:grid-cols-5 gap-12 items-center">
-          <div class="lg:col-span-2" appReveal>
+        <div class="grid sm:grid-cols-5 gap-8 sm:gap-12 items-center">
+          <div class="sm:col-span-2" appReveal>
             <div class="relative">
               <div class="absolute -inset-4 bg-gradient-to-br from-brand-500/20 to-brand-700/10 rounded-3xl blur-2xl" aria-hidden="true"></div>
               <div class="relative card !p-8 bg-gradient-to-br from-white to-ink-50 dark:from-ink-900 dark:to-ink-800">
@@ -43,7 +43,7 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
             </div>
           </div>
 
-          <div class="lg:col-span-3 space-y-6" appReveal [revealDelay]="150">
+          <div class="sm:col-span-3 space-y-6" appReveal [revealDelay]="150">
             <span class="badge">{{ 'about.label' | translate }}</span>
             <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
               {{ 'about.heading' | translate }}
@@ -56,17 +56,17 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
             </div>
 
             <div class="grid grid-cols-3 gap-2 sm:gap-4 pt-4">
-              <div class="text-center p-2 sm:p-4 rounded-xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800">
+              <div class="text-center p-2 sm:p-4 rounded-xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 overflow-hidden min-w-0">
                 <div class="font-display text-2xl sm:text-3xl font-bold gradient-text">5+</div>
-                <div class="text-[10px] sm:text-xs text-ink-600 dark:text-ink-400 mt-1 leading-tight">{{ 'about.stats.years' | translate }}</div>
+                <div class="text-[10px] sm:text-xs text-ink-600 dark:text-ink-400 mt-1 leading-tight hyphens-auto break-words" lang="de">{{ 'about.stats.years' | translate }}</div>
               </div>
-              <div class="text-center p-2 sm:p-4 rounded-xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800">
+              <div class="text-center p-2 sm:p-4 rounded-xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 overflow-hidden min-w-0">
                 <div class="font-display text-2xl sm:text-3xl font-bold gradient-text">30+</div>
-                <div class="text-[10px] sm:text-xs text-ink-600 dark:text-ink-400 mt-1 leading-tight">{{ 'about.stats.techs' | translate }}</div>
+                <div class="text-[10px] sm:text-xs text-ink-600 dark:text-ink-400 mt-1 leading-tight hyphens-auto break-words" lang="de">{{ 'about.stats.techs' | translate }}</div>
               </div>
-              <div class="text-center p-2 sm:p-4 rounded-xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800">
+              <div class="text-center p-2 sm:p-4 rounded-xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 overflow-hidden min-w-0">
                 <div class="font-display text-2xl sm:text-3xl font-bold gradient-text">7</div>
-                <div class="text-[10px] sm:text-xs text-ink-600 dark:text-ink-400 mt-1 leading-tight">{{ 'about.stats.certs' | translate }}</div>
+                <div class="text-[10px] sm:text-xs text-ink-600 dark:text-ink-400 mt-1 leading-tight hyphens-auto break-words" lang="de">{{ 'about.stats.certs' | translate }}</div>
               </div>
             </div>
           </div>

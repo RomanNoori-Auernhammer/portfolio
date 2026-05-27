@@ -19,7 +19,7 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
           </h2>
         </div>
 
-        <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div class="grid sm:grid-cols-2 gap-8 sm:gap-12 max-w-6xl mx-auto">
           <!-- Education -->
           <div appReveal>
             <h3 class="font-display text-2xl font-bold mb-6 flex items-center gap-3">
