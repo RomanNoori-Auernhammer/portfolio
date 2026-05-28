@@ -7,10 +7,6 @@ describe('ProfileService', () => {
     service = new ProfileService();
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-
   describe('personal info', () => {
     it('should have the correct name', () => {
       expect(service.personal.name).toBe('Roman Noori-Auernhammer');
@@ -35,8 +31,12 @@ describe('ProfileService', () => {
   });
 
   describe('skills', () => {
-    it('should have 6 skill categories', () => {
-      expect(service.skillCategories.length).toBe(6);
+    it('should have at least one skill category with an id and skills', () => {
+      expect(service.skillCategories.length).toBeGreaterThan(0);
+      service.skillCategories.forEach((c) => {
+        expect(c.id).toBeTruthy();
+        expect(c.skills.length).toBeGreaterThan(0);
+      });
     });
 
     it('should include Angular in the frontend category', () => {

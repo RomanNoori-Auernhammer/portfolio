@@ -8,7 +8,8 @@
   "hero": {
     "greeting": "Software Engineer",
     "title": "Professional web solutions",
-    "role": "that impress.",
+    "role": "that",
+    "rotatingWords": ["impress", "inspire", "perform", "pay off"],
     "description": "From custom websites for small and medium-sized businesses to scalable full-stack applications.",
     "cta": {
       "booking": "Book a meeting"
@@ -27,7 +28,7 @@
   },
   "services": {
     "heading": "Services",
-    "subheading": "From simple websites to complex full-stack applications — I build digital solutions that work.",
+    "subheading": "From corporate websites to complex applications — I build digital solutions that work.",
     "websites": {
       "title": "Websites",
       "description": "Corporate websites and landing pages — modern, responsive and optimized for your target audience."
@@ -36,14 +37,6 @@
       "title": "Web Applications",
       "description": "Interactive web applications with user management, database integration and complex business logic."
     },
-    "frontend": {
-      "title": "Frontend Development",
-      "description": "Modern user interfaces with Angular and TypeScript — performant, accessible and well-designed."
-    },
-    "backend": {
-      "title": "Backend & APIs",
-      "description": "Robust REST APIs and backend systems with Java and Spring Boot — cleanly structured and well documented."
-    },
     "quality": {
       "title": "Quality Assurance",
       "description": "Automated tests with Jest and Cypress, CI/CD pipelines and code reviews for sustainably maintainable code."
@@ -51,6 +44,14 @@
     "support": {
       "title": "Maintenance & Support",
       "description": "Long-term support for existing projects — updates, bugfixes, performance optimizations and technical support."
+    },
+    "consulting": {
+      "title": "Technical Consulting",
+      "description": "Technology selection and code audits — sound consulting for sustainable technical solutions."
+    },
+    "seo": {
+      "title": "SEO Optimization",
+      "description": "Technical SEO for better search engine visibility — clean structure, fast loading times and Core Web Vitals."
     }
   },
   "skills": {

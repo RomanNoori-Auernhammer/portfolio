@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ProfileService } from '../core/services/profile.service';
 
 @Component({
@@ -36,7 +36,9 @@ import { ProfileService } from '../core/services/profile.service';
 
             <h1 class="font-display text-5xl sm:text-6xl xl:text-7xl font-bold leading-[1.15] mb-6">
               <span class="block text-ink-900 dark:text-ink-50">{{ 'hero.title' | translate }}</span>
-              <span class="block gradient-text">{{ 'hero.role' | translate }}</span>
+              <span class="block gradient-text whitespace-nowrap">
+                {{ 'hero.role' | translate }}&nbsp;{{ currentWord() }}<span class="inline-block w-0.5 h-[0.85em] bg-brand-500 align-middle ml-0.5 animate-pulse"></span>
+              </span>
             </h1>
 
             <p class="text-lg md:text-xl text-ink-600 dark:text-ink-400 mb-10 leading-relaxed">
@@ -134,6 +136,45 @@ import { ProfileService } from '../core/services/profile.service';
     </section>
   `,
 })
-export class HeroSectionComponent {
+export class HeroSectionComponent implements OnInit {
   readonly profile = inject(ProfileService);
+  readonly currentWord = signal('');
+
+  private readonly translate = inject(TranslateService);
+  private readonly destroyRef = inject(DestroyRef);
+  private words: string[] = [];
+  private wordIndex = 0;
+  private charIndex = 0;
+  private isDeleting = false;
+  private timeoutId: ReturnType<typeof setTimeout> | null = null;
+
+  ngOnInit(): void {
+    const result = this.translate.instant('hero.rotatingWords');
+    this.words = Array.isArray(result) ? result : [];
+    if (!this.words.length) return;
+    this.destroyRef.onDestroy(() => { if (this.timeoutId) clearTimeout(this.timeoutId); });
+    this.typeNext();
+  }
+
+  private typeNext(): void {
+    const current = this.words[this.wordIndex];
+
+    if (!this.isDeleting) {
+      this.charIndex++;
+      this.currentWord.set(current.slice(0, this.charIndex));
+      if (this.charIndex === current.length) {
+        this.timeoutId = setTimeout(() => { this.isDeleting = true; this.typeNext(); }, 2000);
+        return;
+      }
+    } else {
+      this.charIndex--;
+      this.currentWord.set(current.slice(0, this.charIndex));
+      if (this.charIndex === 0) {
+        this.isDeleting = false;
+        this.wordIndex = (this.wordIndex + 1) % this.words.length;
+      }
+    }
+
+    this.timeoutId = setTimeout(() => this.typeNext(), this.isDeleting ? 60 : 120);
+  }
 }

@@ -8,7 +8,8 @@
   "hero": {
     "greeting": "Software Engineer",
     "title": "Professionelle Weblösungen,",
-    "role": "die überzeugen.",
+    "role": "die",
+    "rotatingWords": ["überzeugen", "begeistern", "funktionieren", "sich lohnen"],
     "description": "Von individuellen Websites für kleine und mittelgroße Unternehmen bis zu skalierbaren Full-Stack-Anwendungen.",
     "cta": {
       "booking": "Termin vereinbaren"
@@ -27,7 +28,7 @@
   },
   "services": {
     "heading": "Leistungen",
-    "subheading": "Von der einfachen Webseite bis zur komplexen Full-Stack-Anwendung — ich entwickle digitale Lösungen, die funktionieren.",
+    "subheading": "Von der Unternehmenswebsite bis zur komplexen Anwendung — ich entwickle digitale Lösungen, die funktionieren.",
     "websites": {
       "title": "Websites",
       "description": "Corporate Websites und Landing Pages — modern, responsiv und auf Ihre Zielgruppe optimiert."
@@ -36,14 +37,6 @@
       "title": "Web-Applikationen",
       "description": "Interaktive Webanwendungen mit Nutzerverwaltung, Datenbankanbindung und komplexer Geschäftslogik."
     },
-    "frontend": {
-      "title": "Frontend-Entwicklung",
-      "description": "Moderne Benutzeroberflächen mit Angular und TypeScript — performant, barrierefrei und ansprechend gestaltet."
-    },
-    "backend": {
-      "title": "Backend & APIs",
-      "description": "Robuste REST-APIs und Backendsysteme mit Java und Spring Boot — sauber strukturiert und gut dokumentiert."
-    },
     "quality": {
       "title": "Qualitätssicherung",
       "description": "Automatisierte Tests mit Jest und Cypress, CI/CD-Pipelines und Code-Reviews für nachhaltig wartbaren Code."
@@ -51,6 +44,14 @@
     "support": {
       "title": "Wartung & Support",
       "description": "Langfristige Betreuung bestehender Projekte — Updates, Bugfixes, Performance-Optimierungen und technischer Support."
+    },
+    "consulting": {
+      "title": "Technische Beratung",
+      "description": "Technologieauswahl und Code-Audits — fundierte Beratung für nachhaltige technische Lösungen."
+    },
+    "seo": {
+      "title": "SEO-Optimierung",
+      "description": "Technische SEO für bessere Sichtbarkeit in Suchmaschinen — saubere Struktur, schnelle Ladezeiten und Core Web Vitals."
     }
   },
   "skills": {
