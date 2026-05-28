@@ -47,7 +47,7 @@ import { ProfileService } from '../core/services/profile.service';
             <div class="flex flex-col sm:flex-row gap-4">
               <!-- Mobile: Termin vereinbaren (grün/primary) -->
               <a href="https://calendly.com/r-noori-auernhammer/30min" target="_blank" rel="noopener noreferrer"
-                 class="btn-primary md:hidden">
+                 class="btn-primary md:hidden self-center min-w-64">
                 {{ 'hero.cta.booking' | translate }}
                 <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
