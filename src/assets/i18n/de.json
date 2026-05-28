@@ -29,12 +29,12 @@
     "heading": "Leistungen",
     "subheading": "Von der einfachen Webseite bis zur komplexen Full-Stack-Anwendung — ich entwickle digitale Lösungen, die funktionieren.",
     "websites": {
-      "title": "Webseiten",
-      "description": "Professionelle, moderne Webseiten für Unternehmen — responsiv, schnell und auf Ihre Zielgruppe ausgerichtet."
+      "title": "Websites",
+      "description": "Corporate Websites und Landing Pages — modern, responsiv und auf Ihre Zielgruppe optimiert."
     },
     "webapps": {
       "title": "Web-Applikationen",
-      "description": "Skalierbare Full-Stack-Anwendungen mit Angular und Java/Spring Boot — von der Idee bis zum fertigen Produkt."
+      "description": "Interaktive Webanwendungen mit Nutzerverwaltung, Datenbankanbindung und komplexer Geschäftslogik."
     },
     "frontend": {
       "title": "Frontend-Entwicklung",
