@@ -93,7 +93,7 @@
     "readMore": "Weiterlesen"
   },
   "footer": {
-    "tagline": "Full-Stack Developer · Individuelle Weblösungen für kleine und mittelgroße Unternehmen und Unternehmen.",
+    "tagline": "Full-Stack Developer · Maßgeschneiderte Weblösungen für Startups und Unternehmen.",
     "socialHeading": "Netzwerke",
     "contact": "Kontakt",
     "rights": "Alle Rechte vorbehalten.",
@@ -114,8 +114,8 @@
       "title": "Datenschutzerklärung",
       "section1": "Allgemeine Hinweise",
       "section1Text": "Diese Website verarbeitet personenbezogene Daten nur in dem Umfang, der für die Bereitstellung der Website und die Kontaktaufnahme erforderlich ist.",
-      "section2": "Kontaktformular",
-      "section2Text": "Beim Absenden des Kontaktformulars werden die eingegebenen Daten ausschließlich an Ihr lokales E-Mail-Programm übergeben (mailto). Es findet keine serverseitige Speicherung oder Übertragung an Dritte statt.",
+      "section2": "Terminbuchung via Calendly",
+      "section2Text": "Für Terminbuchungen nutze ich Calendly (Calendly LLC, USA). Dabei werden Name, E-Mail-Adresse und Termindetails an Calendly übermittelt und in den USA verarbeitet. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO. Datenschutzerklärung: calendly.com/privacy.",
       "section3": "Lokale Speicherung",
       "section3Text": "Diese Website speichert Ihre Sprach- und Theme-Einstellungen ausschließlich lokal im Browser (localStorage). Diese Daten verlassen Ihr Gerät nicht.",
       "section4": "Externe Schriftarten",

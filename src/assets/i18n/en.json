@@ -93,7 +93,7 @@
     "readMore": "Read more"
   },
   "footer": {
-    "tagline": "Full-Stack Developer · Custom web solutions for small and medium-sized businesses and enterprises.",
+    "tagline": "Full-Stack Developer · Tailored web solutions for startups and enterprises.",
     "socialHeading": "Networks",
     "contact": "Contact",
     "rights": "All rights reserved.",
@@ -114,8 +114,8 @@
       "title": "Privacy Policy",
       "section1": "General Information",
       "section1Text": "This website processes personal data only to the extent necessary to provide the website and enable contact.",
-      "section2": "Contact Form",
-      "section2Text": "When you submit the contact form, the entered data is passed exclusively to your local email program (mailto). No server-side storage or transfer to third parties takes place.",
+      "section2": "Appointment Booking via Calendly",
+      "section2Text": "For appointment scheduling I use Calendly (Calendly LLC, USA). Name, email address, and appointment details are transmitted to and processed by Calendly in the USA. Legal basis: Art. 6(1)(b) GDPR. Privacy policy: calendly.com/privacy.",
       "section3": "Local Storage",
       "section3Text": "This website stores your language and theme preferences exclusively locally in the browser (localStorage). This data does not leave your device.",
       "section4": "External Fonts",
