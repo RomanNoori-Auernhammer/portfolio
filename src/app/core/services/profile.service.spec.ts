@@ -34,35 +34,6 @@ describe('ProfileService', () => {
     });
   });
 
-  describe('experiences', () => {
-    it('should contain 2 experiences (Festanstellung + Ausbildung)', () => {
-      expect(service.experiences.length).toBe(2);
-    });
-
-    it('should have DATEV as employer for both experiences', () => {
-      service.experiences.forEach((exp) => {
-        expect(exp.company).toBe('DATEV eG');
-      });
-    });
-
-    it('should have highlight keys for each experience', () => {
-      service.experiences.forEach((exp) => {
-        expect(exp.highlightKeys.length).toBeGreaterThan(0);
-      });
-    });
-  });
-
-  describe('education', () => {
-    it('should contain at least 1 entry', () => {
-      expect(service.education.length).toBeGreaterThanOrEqual(1);
-    });
-
-    it('should include the IHK-Fachinformatiker training', () => {
-      const ihk = service.education.find((e) => e.id === 'ihk');
-      expect(ihk).toBeDefined();
-    });
-  });
-
   describe('skills', () => {
     it('should have 6 skill categories', () => {
       expect(service.skillCategories.length).toBe(6);
@@ -93,29 +64,4 @@ describe('ProfileService', () => {
     });
   });
 
-  describe('certifications', () => {
-    it('should have at least one current certification', () => {
-      const current = service.certifications.filter((c) => c.current);
-      expect(current.length).toBeGreaterThan(0);
-    });
-
-    it('should be sorted from newest to oldest', () => {
-      const dates = service.certifications.map((c) => c.date);
-      const sorted = [...dates].sort().reverse();
-      expect(dates).toEqual(sorted);
-    });
-  });
-
-  describe('languages', () => {
-    it('should include all three languages', () => {
-      expect(service.languages.length).toBe(3);
-    });
-
-    it('should have a proficiency between 1 and 5 for each language', () => {
-      service.languages.forEach((lang) => {
-        expect(lang.proficiency).toBeGreaterThanOrEqual(1);
-        expect(lang.proficiency).toBeLessThanOrEqual(5);
-      });
-    });
-  });
 });

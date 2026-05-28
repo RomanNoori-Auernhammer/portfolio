@@ -52,7 +52,6 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
             <div class="space-y-4 text-base md:text-lg text-ink-700 dark:text-ink-300 leading-relaxed">
               <p>{{ 'about.p1' | translate }}</p>
               <p>{{ 'about.p2' | translate }}</p>
-              <p>{{ 'about.p3' | translate }}</p>
             </div>
 
             <div class="grid grid-cols-3 gap-2 sm:gap-4 pt-4">
