@@ -44,7 +44,6 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
           </div>
 
           <div class="sm:col-span-3 space-y-6" appReveal [revealDelay]="150">
-            <span class="badge">{{ 'about.label' | translate }}</span>
             <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
               {{ 'about.heading' | translate }}
               <span class="gradient-text">{{ 'about.headingHighlight' | translate }}</span>

@@ -14,7 +14,6 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
 
         <!-- Services -->
         <div class="max-w-3xl mx-auto text-center mb-16" appReveal>
-          <span class="badge mb-4">{{ 'services.badge' | translate }}</span>
           <h2 class="font-display text-4xl sm:text-5xl font-bold text-ink-900 dark:text-ink-50 mb-4">
             {{ 'services.heading' | translate }}
           </h2>
@@ -48,8 +47,7 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
 
         <!-- Projects -->
         <div class="max-w-3xl mx-auto text-center mb-16" appReveal>
-          <span class="badge">{{ 'projects.label' | translate }}</span>
-          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold mt-4">
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold">
             {{ 'projects.heading' | translate }}
           </h2>
           <p class="mt-4 text-lg text-ink-600 dark:text-ink-400">

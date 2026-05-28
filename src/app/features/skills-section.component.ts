@@ -13,8 +13,7 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
     <section id="skills" class="section-padding bg-ink-100 dark:bg-ink-900/30">
       <div class="container-custom">
         <div class="max-w-3xl mx-auto text-center mb-16" appReveal>
-          <span class="badge">{{ 'skills.label' | translate }}</span>
-          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold mt-4">
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold">
             {{ 'skills.heading' | translate }}
           </h2>
           <p class="mt-4 text-lg text-ink-600 dark:text-ink-400">

@@ -15,8 +15,7 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
     <section id="blog" class="section-padding">
       <div class="container-custom">
         <div class="max-w-3xl mx-auto text-center mb-16" appReveal>
-          <span class="badge">{{ 'blog.label' | translate }}</span>
-          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold mt-4">
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold">
             {{ 'blog.heading' | translate }}
           </h2>
           <p class="mt-4 text-lg text-ink-600 dark:text-ink-400">

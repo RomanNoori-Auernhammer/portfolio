@@ -12,8 +12,7 @@ import { RevealDirective } from '../shared/directives/reveal.directive';
 
         <!-- Header -->
         <div class="max-w-2xl mb-16" appReveal>
-          <span class="badge">Blog</span>
-          <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold mt-4">
+          <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold">
             Aus meiner Praxis
           </h1>
           <p class="mt-4 text-lg text-ink-600 dark:text-ink-400">

@@ -2,43 +2,23 @@
   "nav": {
     "home": "Home",
     "about": "Über mich",
-    "services": "Leistungen",
     "portfolio": "Portfolio",
-    "blog": "Blog",
-    "experience": "Erfahrung",
-    "skills": "Skills",
-    "projects": "Projekte",
-    "education": "Ausbildung",
-    "contact": "Kontakt"
+    "blog": "Blog"
   },
   "hero": {
-    "status": "Verfügbar für Festanstellung & Freelance-Projekte",
     "greeting": "Software Engineer",
     "title": "Professionelle Weblösungen,",
     "role": "die überzeugen.",
     "description": "Von individuellen Websites für kleine und mittelgroße Unternehmen bis zu skalierbaren Full-Stack-Anwendungen.",
     "cta": {
-      "contact": "Kontakt aufnehmen",
-      "projects": "Projekte ansehen",
       "booking": "Termin vereinbaren"
-    },
-    "techStack": "Stack",
-    "scroll": "Scrollen",
-    "typewriter": {
-      "label": "aktuell verfügbar als",
-      "skills": ["Angular", "TypeScript", "Tailwind CSS", "Java", "Spring Boot", "PostgreSQL", "Docker", "GitLab CI/CD", "Cloud Foundry", "Jest", "Cypress"]
     }
   },
   "about": {
-    "label": "Über mich",
     "heading": "Software Engineer",
     "headingHighlight": "mit Leidenschaft für das Web.",
     "p1": "Qualität steht dabei immer im Mittelpunkt: sauberer Code, durchdachte Architektur und umfangreiche Tests. Ich liefere Ergebnisse, die überzeugen.",
     "p2": "Mit einer offenen, transparenten Kommunikation begleite ich Kunden und Teams von der ersten Idee bis zum fertigen Produkt.",
-    "p3": "",
-    "info": {
-      "experience": "5+ Jahre IT-Erfahrung"
-    },
     "stats": {
       "years": "Jahre IT-Erfahrung",
       "techs": "Technologien",
@@ -46,11 +26,8 @@
     }
   },
   "services": {
-    "badge": "Leistungen",
     "heading": "Was ich für Sie entwickle",
     "subheading": "Von der einfachen Webseite bis zur komplexen Full-Stack-Anwendung — ich entwickle digitale Lösungen, die funktionieren.",
-    "examples": "Möchten Sie konkrete Beispiele meiner Arbeit sehen?",
-    "cta": "Arbeitsbeispiele ansehen",
     "websites": {
       "title": "Webseiten",
       "description": "Professionelle, moderne Webseiten für Unternehmen — responsiv, schnell und auf Ihre Zielgruppe ausgerichtet."
@@ -72,30 +49,7 @@
       "description": "Automatisierte Tests mit Jest und Cypress, CI/CD-Pipelines und Code-Reviews für nachhaltig wartbaren Code."
     }
   },
-  "experience": {
-    "label": "Werdegang",
-    "heading": "Berufserfahrung",
-    "subheading": "Stationen, die mich geprägt haben.",
-    "datevJob": {
-      "position": "Full-Stack Developer (Festanstellung)",
-      "description": "",
-      "h1": "Weiterentwicklung einer Benachrichtigungsplattform für interne Fachanwendungen mit Angular, TypeScript und Java/Spring Boot",
-      "h2": "Eigenverantwortliche Umsetzung von Features — von der Anforderungsanalyse über das Design bis zum Deployment in Cloud Foundry",
-      "h3": "Sicherstellung hoher Softwarequalität durch TDD, Code-Reviews und statische Codeanalyse (Jest, Cypress, SonarQube)",
-      "h4": "Pflege und Erweiterung von GitLab CI/CD-Pipelines sowie aktive Mitarbeit im Scrum-Team",
-      "h5": "Pair- und Mob-Programming sowie interne Fachvorträge zum Wissenstransfer",
-      "h6": "Enge Zusammenarbeit mit Produktmanagement und QA zur Abstimmung von Anforderungen"
-    },
-    "datevAusbildung": {
-      "position": "Fachinformatiker Anwendungsentwicklung (Ausbildung)",
-      "description": "",
-      "h1": "Ausbildung mit Fokus auf Full-Stack-Entwicklung: Angular, TypeScript, Java, Spring Boot und PostgreSQL",
-      "h2": "Aktive Mitarbeit an einem produktiven Softwareprojekt ab dem zweiten Ausbildungsjahr",
-      "h3": "Abschluss als IHK-Fachinformatiker Anwendungsentwicklung (02/2024)"
-    }
-  },
   "skills": {
-    "label": "Kompetenzen",
     "heading": "Technologien & Skills",
     "subheading": "Mein technischer Werkzeugkoffer.",
     "frontend": "Frontend",
@@ -106,7 +60,6 @@
     "methods": "Methoden"
   },
   "projects": {
-    "label": "Highlights",
     "heading": "Ausgewählte Projekte",
     "subheading": "Einblicke in meine Arbeit — professionelle Lösungen für Unternehmen und eigene Projekte.",
     "notification": {
@@ -129,61 +82,7 @@
       "h2": "Integration in bestehende CI/CD-Pipelines"
     }
   },
-  "education": {
-    "label": "Bildung",
-    "heading": "Ausbildung & Weiterbildung",
-    "educationTitle": "Bildungsweg",
-    "certsTitle": "Weiterbildungen",
-    "languagesTitle": "Sprachen",
-    "ihk": {
-      "degree": "IHK-Fachinformatiker, Anwendungsentwicklung",
-      "description": "Ausbildung mit Fokus auf cloudbasierte Softwareentwicklung."
-    },
-    "school": {
-      "degree": "Mittlere Reife"
-    }
-  },
-  "certs": {
-    "docker": "Docker & Container Grundlagen",
-    "angular": "Angular Vertiefung",
-    "cypress": "Automatisiertes isoliertes Frontend Testing (Cypress)",
-    "typescript": "Vertiefung JavaScript und TypeScript",
-    "aws": "AWS Sustainability Immersion Day",
-    "cn2": "Cloud Native Entwicklung II",
-    "cn1": "Cloud Native Entwicklung I"
-  },
-  "languages": {
-    "persian": "Persisch",
-    "german": "Deutsch",
-    "english": "Englisch",
-    "native": "Muttersprache",
-    "c1": "Verhandlungssicher",
-    "b2": "Fließend"
-  },
-  "contact": {
-    "label": "Kontakt",
-    "heading": "Lass uns reden",
-    "subheading": "Ich freue mich auf deine Nachricht — egal ob spannendes Projekt, Job-Möglichkeit oder einfach zum Austausch.",
-    "email": "E-Mail",
-    "phone": "Telefon",
-    "location": "Standort",
-    "formNote": "Hinweis: Beim Absenden öffnet sich dein E-Mail-Programm mit den eingetragenen Daten. Es werden keine Daten an einen Server übertragen — DSGVO-konform und ohne Tracking.",
-    "form": {
-      "name": "Name",
-      "email": "E-Mail",
-      "subject": "Betreff",
-      "message": "Nachricht",
-      "submit": "Nachricht senden"
-    },
-    "errors": {
-      "required": "Dieses Feld ist erforderlich.",
-      "email": "Bitte gib eine gültige E-Mail-Adresse ein.",
-      "minLength": "Bitte gib mindestens 10 Zeichen ein."
-    },
-    "success": "Dein E-Mail-Programm sollte sich nun geöffnet haben."
-  },
   "blog": {
-    "label": "Blog",
     "heading": "Aus meiner Praxis",
     "subheading": "Womit ich mich beschäftige — Erfahrungen, Learnings und Gedanken aus dem Entwickleralltag.",
     "readMore": "Weiterlesen"
