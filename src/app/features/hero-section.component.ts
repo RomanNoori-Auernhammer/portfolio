@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { ProfileService } from '../core/services/profile.service';
 
 @Component({
@@ -15,7 +15,7 @@ import { ProfileService } from '../core/services/profile.service';
       <div class="absolute bottom-20 left-10 h-72 w-72 rounded-full bg-brand-400/10 blur-3xl animate-float" style="animation-delay: -3s" aria-hidden="true"></div>
 
       <div class="container-custom relative z-10 py-6 md:py-12 lg:py-20 w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
 
           <!-- Text -->
           <div>
@@ -99,46 +99,21 @@ import { ProfileService } from '../core/services/profile.service';
             </div>
           </div>
 
-          <!-- Portrait + Code-Editor: only on large screens -->
-          <div class="hidden lg:flex flex-col items-end gap-4">
-
-            <!-- Portrait -->
-            <div class="relative w-64">
-              <div class="absolute -inset-4 bg-brand-500/10 rounded-3xl blur-2xl" aria-hidden="true"></div>
-              <div class="relative rounded-2xl overflow-hidden aspect-[3/4] shadow-xl ring-1 ring-ink-200 dark:ring-ink-700">
-                <img src="assets/images/profile.jpg" alt="Roman Noori-Auernhammer"
-                     class="w-full h-full object-cover object-top" />
-                <div class="absolute inset-0 bg-gradient-to-t from-ink-950/40 via-transparent to-transparent" aria-hidden="true"></div>
-              </div>
-              <!-- Available badge -->
-              <div class="absolute -top-3 -right-3 flex items-center gap-2 px-3 py-1.5
-                          rounded-full bg-white dark:bg-ink-900
-                          border border-ink-200 dark:border-ink-700 shadow-lg text-xs font-medium">
-                <span class="h-2 w-2 rounded-full bg-green-400 animate-pulse" aria-hidden="true"></span>
-                <span class="text-ink-700 dark:text-ink-300">Verfügbar</span>
-              </div>
+          <!-- Portrait: only on large screens -->
+          <div class="hidden lg:block relative w-72 ml-auto">
+            <div class="absolute -inset-4 bg-brand-500/10 rounded-3xl blur-2xl" aria-hidden="true"></div>
+            <div class="relative rounded-2xl overflow-hidden aspect-[3/4] shadow-xl ring-1 ring-ink-200 dark:ring-ink-700">
+              <img src="assets/images/profile.jpg" alt="Roman Noori-Auernhammer"
+                   class="w-full h-full object-cover object-top" />
+              <div class="absolute inset-0 bg-gradient-to-t from-ink-950/40 via-transparent to-transparent" aria-hidden="true"></div>
             </div>
-
-            <!-- Code editor card -->
-            <div class="w-64 rounded-2xl border border-ink-200 dark:border-ink-700
-                        bg-white dark:bg-ink-900 shadow-xl overflow-hidden">
-              <div class="flex items-center gap-1 px-3 py-2 bg-ink-100 dark:bg-ink-800 border-b border-ink-200 dark:border-ink-700">
-                <span class="h-2 w-2 rounded-full bg-red-400"></span>
-                <span class="h-2 w-2 rounded-full bg-yellow-400"></span>
-                <span class="h-2 w-2 rounded-full bg-green-400"></span>
-                <span class="ml-auto font-mono text-[10px] text-ink-400">roman.dev</span>
-              </div>
-              <div class="p-4 font-mono text-xs leading-6">
-                <p><span class="text-brand-500">const</span><span class="text-blue-500 dark:text-blue-400"> skills</span><span class="text-ink-500"> = [</span></p>
-                <p class="pl-4 min-h-[1.5rem]">
-                  <span class="text-green-500 dark:text-green-400">"</span><span class="text-ink-900 dark:text-ink-50">{{ displayedText() }}</span><span class="inline-block w-0.5 h-[0.95em] bg-brand-500 mx-px align-middle animate-pulse"></span><span class="text-green-500 dark:text-green-400">"</span>
-                </p>
-                <p class="text-ink-400">]</p>
-                <p>&nbsp;</p>
-                <p class="text-ink-400 dark:text-ink-500">// Roman</p>
-              </div>
+            <!-- Available badge -->
+            <div class="absolute -top-3 -right-3 flex items-center gap-2 px-3 py-1.5
+                        rounded-full bg-white dark:bg-ink-900
+                        border border-ink-200 dark:border-ink-700 shadow-lg text-xs font-medium">
+              <span class="h-2 w-2 rounded-full bg-green-400 animate-pulse" aria-hidden="true"></span>
+              <span class="text-ink-700 dark:text-ink-300">Verfügbar</span>
             </div>
-
           </div>
 
         </div>
@@ -159,57 +134,6 @@ import { ProfileService } from '../core/services/profile.service';
     </section>
   `,
 })
-export class HeroSectionComponent implements OnInit {
+export class HeroSectionComponent {
   readonly profile = inject(ProfileService);
-  readonly displayedText = signal('');
-
-  private readonly translate = inject(TranslateService);
-  private readonly destroyRef = inject(DestroyRef);
-
-  private currentIndex = 0;
-  private charIndex = 0;
-  private isDeleting = false;
-  private timeoutId: ReturnType<typeof setTimeout> | null = null;
-
-  ngOnInit(): void {
-    this.destroyRef.onDestroy(() => {
-      if (this.timeoutId) clearTimeout(this.timeoutId);
-    });
-    this.typeNext();
-  }
-
-  private get skills(): string[] {
-    const result = this.translate.instant('hero.typewriter.skills');
-    return Array.isArray(result) ? result : [];
-  }
-
-  private typeNext(): void {
-    const skills = this.skills;
-    if (!skills.length) return;
-
-    const current = skills[this.currentIndex];
-
-    if (!this.isDeleting) {
-      this.charIndex++;
-      this.displayedText.set(current.slice(0, this.charIndex));
-
-      if (this.charIndex === current.length) {
-        this.timeoutId = setTimeout(() => {
-          this.isDeleting = true;
-          this.typeNext();
-        }, 2000);
-        return;
-      }
-    } else {
-      this.charIndex--;
-      this.displayedText.set(current.slice(0, this.charIndex));
-
-      if (this.charIndex === 0) {
-        this.isDeleting = false;
-        this.currentIndex = (this.currentIndex + 1) % skills.length;
-      }
-    }
-
-    this.timeoutId = setTimeout(() => this.typeNext(), this.isDeleting ? 60 : 130);
-  }
 }
