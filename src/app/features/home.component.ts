@@ -16,8 +16,8 @@ import { ProjectsSectionComponent } from './projects-section.component';
   template: `
     <app-hero-section />
     <app-about-section />
-    <app-skills-section />
     <app-projects-section />
+    <app-skills-section />
   `,
 })
 export class HomeComponent {}
