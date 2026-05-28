@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, inject, signal } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ProfileService } from '../core/services/profile.service';
@@ -48,6 +49,9 @@ import { ProfileService } from '../core/services/profile.service';
               <a href="https://calendly.com/r-noori-auernhammer/30min" target="_blank" rel="noopener noreferrer"
                  class="btn-primary md:hidden">
                 {{ 'hero.cta.booking' | translate }}
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
               </a>
               <!-- Mobile: Kontakt-Icons -->
               <div class="flex gap-3 md:hidden justify-center">
@@ -147,11 +151,21 @@ export class HeroSectionComponent implements OnInit {
   private timeoutId: ReturnType<typeof setTimeout> | null = null;
 
   ngOnInit(): void {
+    this.destroyRef.onDestroy(() => { if (this.timeoutId) clearTimeout(this.timeoutId); });
+    this.loadWords();
+    this.translate.onLangChange.pipe(takeUntilDestroyed(this.destroyRef)).subscribe(() => {
+      if (this.timeoutId) clearTimeout(this.timeoutId);
+      this.wordIndex = 0;
+      this.charIndex = 0;
+      this.isDeleting = false;
+      this.loadWords();
+    });
+  }
+
+  private loadWords(): void {
     const result = this.translate.instant('hero.rotatingWords');
     this.words = Array.isArray(result) ? result : [];
-    if (!this.words.length) return;
-    this.destroyRef.onDestroy(() => { if (this.timeoutId) clearTimeout(this.timeoutId); });
-    this.typeNext();
+    if (this.words.length) this.typeNext();
   }
 
   private typeNext(): void {
