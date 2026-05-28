@@ -9,7 +9,7 @@
     "greeting": "Software Engineer",
     "title": "Professional web solutions",
     "role": "that",
-    "rotatingWords": ["impress", "inspire", "perform", "pay off"],
+    "rotatingWords": ["impress", "inspire", "pay off"],
     "description": "From custom websites for small and medium-sized businesses to scalable full-stack applications.",
     "cta": {
       "booking": "Book a meeting"

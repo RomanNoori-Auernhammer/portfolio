@@ -36,7 +36,7 @@ import { ProfileService } from '../core/services/profile.service';
 
             <h1 class="font-display text-5xl sm:text-6xl xl:text-7xl font-bold leading-[1.15] mb-6">
               <span class="block text-ink-900 dark:text-ink-50">{{ 'hero.title' | translate }}</span>
-              <span class="block"><span class="gradient-text">{{ 'hero.role' | translate }}&nbsp;<span class="whitespace-nowrap">{{ currentWord() }}</span></span><span class="inline-block w-0.5 h-[0.85em] bg-brand-500 align-text-bottom animate-blink"></span></span>
+              <span class="block gradient-text">{{ 'hero.role' | translate }}&nbsp;<span class="whitespace-nowrap">{{ currentWord() }}<span class="inline-block w-0.5 h-[0.85em] bg-brand-500 align-middle animate-blink"></span></span></span>
             </h1>
 
             <p class="text-lg md:text-xl text-ink-600 dark:text-ink-400 mb-10 leading-relaxed">

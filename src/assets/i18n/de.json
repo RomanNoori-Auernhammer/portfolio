@@ -9,7 +9,7 @@
     "greeting": "Software Engineer",
     "title": "Professionelle Weblösungen,",
     "role": "die",
-    "rotatingWords": ["überzeugen", "begeistern", "funktionieren", "sich lohnen"],
+    "rotatingWords": ["überzeugen", "begeistern", "sich lohnen"],
     "description": "Von individuellen Websites für kleine und mittelgroße Unternehmen bis zu skalierbaren Full-Stack-Anwendungen.",
     "cta": {
       "booking": "Termin vereinbaren"
