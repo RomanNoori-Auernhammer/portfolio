@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "services": "Services",
     "portfolio": "Portfolio",
     "blog": "Blog",
     "experience": "Experience",
@@ -15,7 +16,7 @@
     "greeting": "Software Engineer",
     "title": "Professional web solutions",
     "role": "that impress.",
-    "description": "From custom business websites for small and medium-sized businesses to scalable full-stack applications — I build digital solutions with 5+ years of experience that delight your clients.",
+    "description": "From custom websites for small and medium-sized businesses to scalable full-stack applications.",
     "cta": {
       "contact": "Get in touch",
       "projects": "View projects",
@@ -30,11 +31,11 @@
   },
   "about": {
     "label": "About me",
-    "heading": "Software Engineer with",
-    "headingHighlight": "a passion for the web.",
-    "p1": "I build modern, professional web solutions — from custom websites for small and medium-sized businesses to scalable full-stack applications with Angular and Java/Spring Boot.",
-    "p2": "Quality is always at the core: clean code, thoughtful architecture and comprehensive testing. Whether as a freelancer for small and medium-sized businesses or as a developer within a team — I deliver results that make an impact.",
-    "p3": "With an open, approachable communication style, I guide clients and teams from the first idea through to the finished product.",
+    "heading": "Software Engineer",
+    "headingHighlight": "with a passion for the web.",
+    "p1": "Quality is always at the core: clean code, thoughtful architecture and comprehensive testing. I deliver results that make an impact.",
+    "p2": "With an open, transparent communication style, I guide clients and teams from the first idea through to the finished product.",
+    "p3": "",
     "info": {
       "experience": "5+ years IT experience"
     },
@@ -42,6 +43,33 @@
       "years": "Years of IT experience",
       "techs": "Technologies",
       "certs": "Certifications"
+    }
+  },
+  "services": {
+    "badge": "Services",
+    "heading": "What I build for you",
+    "subheading": "From simple websites to complex full-stack applications — I build digital solutions that work.",
+    "examples": "Want to see concrete examples of my work?",
+    "cta": "View work examples",
+    "websites": {
+      "title": "Websites",
+      "description": "Professional, modern websites for businesses — responsive, fast, and tailored to your target audience."
+    },
+    "webapps": {
+      "title": "Web Applications",
+      "description": "Scalable full-stack applications with Angular and Java/Spring Boot — from idea to finished product."
+    },
+    "frontend": {
+      "title": "Frontend Development",
+      "description": "Modern user interfaces with Angular and TypeScript — performant, accessible and well-designed."
+    },
+    "backend": {
+      "title": "Backend & APIs",
+      "description": "Robust REST APIs and backend systems with Java and Spring Boot — cleanly structured and well documented."
+    },
+    "quality": {
+      "title": "Quality Assurance",
+      "description": "Automated tests with Jest and Cypress, CI/CD pipelines and code reviews for sustainably maintainable code."
     }
   },
   "experience": {

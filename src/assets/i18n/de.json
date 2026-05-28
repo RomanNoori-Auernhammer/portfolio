@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "Über mich",
+    "services": "Leistungen",
     "portfolio": "Portfolio",
     "blog": "Blog",
     "experience": "Erfahrung",
@@ -15,7 +16,7 @@
     "greeting": "Software Engineer",
     "title": "Professionelle Weblösungen,",
     "role": "die überzeugen.",
-    "description": "Von individuellen Unternehmenswebsites für kleine und mittelgroße Unternehmen bis zu skalierbaren Full-Stack-Anwendungen — ich entwickle digitale Lösungen mit 5+ Jahren Erfahrung, die Ihre Kunden begeistern.",
+    "description": "Von individuellen Websites für kleine und mittelgroße Unternehmen bis zu skalierbaren Full-Stack-Anwendungen.",
     "cta": {
       "contact": "Kontakt aufnehmen",
       "projects": "Projekte ansehen",
@@ -30,11 +31,11 @@
   },
   "about": {
     "label": "Über mich",
-    "heading": "Software Engineer mit",
-    "headingHighlight": "Leidenschaft für das Web.",
-    "p1": "Ich entwickle moderne, professionelle Weblösungen — von individuellen Unternehmenswebsites für kleine und mittelständische Betriebe bis hin zu skalierbaren Full-Stack-Anwendungen mit Angular und Java/Spring Boot.",
-    "p2": "Qualität steht dabei immer im Mittelpunkt: sauberer Code, durchdachte Architektur und umfangreiche Tests. Ob als Freelancer für kleine und mittelgroße Unternehmen oder als Entwickler im Team — ich liefere Ergebnisse, die überzeugen.",
-    "p3": "Mit einem offenen, zuvorkommenden Kommunikationsstil begleite ich Kunden und Teams von der ersten Idee bis zum fertigen Produkt.",
+    "heading": "Software Engineer",
+    "headingHighlight": "mit Leidenschaft für das Web.",
+    "p1": "Qualität steht dabei immer im Mittelpunkt: sauberer Code, durchdachte Architektur und umfangreiche Tests. Ich liefere Ergebnisse, die überzeugen.",
+    "p2": "Mit einer offenen, transparenten Kommunikation begleite ich Kunden und Teams von der ersten Idee bis zum fertigen Produkt.",
+    "p3": "",
     "info": {
       "experience": "5+ Jahre IT-Erfahrung"
     },
@@ -42,6 +43,33 @@
       "years": "Jahre IT-Erfahrung",
       "techs": "Technologien",
       "certs": "Weiterbildungen"
+    }
+  },
+  "services": {
+    "badge": "Leistungen",
+    "heading": "Was ich für Sie entwickle",
+    "subheading": "Von der einfachen Webseite bis zur komplexen Full-Stack-Anwendung — ich entwickle digitale Lösungen, die funktionieren.",
+    "examples": "Möchten Sie konkrete Beispiele meiner Arbeit sehen?",
+    "cta": "Arbeitsbeispiele ansehen",
+    "websites": {
+      "title": "Webseiten",
+      "description": "Professionelle, moderne Webseiten für Unternehmen — responsiv, schnell und auf Ihre Zielgruppe ausgerichtet."
+    },
+    "webapps": {
+      "title": "Web-Applikationen",
+      "description": "Skalierbare Full-Stack-Anwendungen mit Angular und Java/Spring Boot — von der Idee bis zum fertigen Produkt."
+    },
+    "frontend": {
+      "title": "Frontend-Entwicklung",
+      "description": "Moderne Benutzeroberflächen mit Angular und TypeScript — performant, barrierefrei und ansprechend gestaltet."
+    },
+    "backend": {
+      "title": "Backend & APIs",
+      "description": "Robuste REST-APIs und Backendsysteme mit Java und Spring Boot — sauber strukturiert und gut dokumentiert."
+    },
+    "quality": {
+      "title": "Qualitätssicherung",
+      "description": "Automatisierte Tests mit Jest und Cypress, CI/CD-Pipelines und Code-Reviews für nachhaltig wartbaren Code."
     }
   },
   "experience": {
