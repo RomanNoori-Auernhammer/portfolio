@@ -47,6 +47,10 @@
     "quality": {
       "title": "Quality Assurance",
       "description": "Automated tests with Jest and Cypress, CI/CD pipelines and code reviews for sustainably maintainable code."
+    },
+    "support": {
+      "title": "Maintenance & Support",
+      "description": "Long-term support for existing projects — updates, bugfixes, performance optimizations and technical support."
     }
   },
   "skills": {

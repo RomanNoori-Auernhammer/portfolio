@@ -47,6 +47,10 @@
     "quality": {
       "title": "Qualitätssicherung",
       "description": "Automatisierte Tests mit Jest und Cypress, CI/CD-Pipelines und Code-Reviews für nachhaltig wartbaren Code."
+    },
+    "support": {
+      "title": "Wartung & Support",
+      "description": "Langfristige Betreuung bestehender Projekte — Updates, Bugfixes, Performance-Optimierungen und technischer Support."
     }
   },
   "skills": {
