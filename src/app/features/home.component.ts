@@ -15,8 +15,8 @@ import { ProjectsSectionComponent } from './projects-section.component';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-hero-section />
-    <app-about-section />
     <app-projects-section />
+    <app-about-section />
     <app-skills-section />
   `,
 })
